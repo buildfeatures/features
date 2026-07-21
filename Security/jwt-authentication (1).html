@@ -1,0 +1,2797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ========================================================= -->
+    <!-- BUILDFEATURES -->
+    <!-- Production Ready Documentation Page -->
+    <!-- PART 1A -->
+    <!-- HTML HEAD + GLOBAL FOUNDATION -->
+    <!-- ========================================================= -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge">
+
+    <!-- ========================================================= -->
+    <!-- SEO -->
+    <!-- ========================================================= -->
+
+    <title>
+        Trust Meter | BuildFeatures
+    </title>
+
+    <meta
+        name="description"
+        content="Production-ready documentation for the Trust Meter feature. Learn how it works, implementation planning, technology requirements, workflow, comparisons, business value, and real-world applications.">
+
+    <meta
+        name="keywords"
+        content="BuildFeatures, Trust Meter, Software Features, Documentation, Banking Features, Marketplace Features, SaaS Features, Feature Knowledge Base">
+
+    <meta
+        name="author"
+        content="BuildFeatures">
+
+    <!-- ========================================================= -->
+    <!-- GOOGLE FONT -->
+    <!-- ========================================================= -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- ========================================================= -->
+    <!-- CSS -->
+    <!-- ========================================================= -->
+
+    <style>
+
+        /* ========================================================= */
+        /* ROOT VARIABLES */
+        /* ========================================================= */
+
+        :root {
+
+            --primary: #111111;
+
+            --secondary: #555555;
+
+            --light: #777777;
+
+            --border: #e8e8e8;
+
+            --background: #ffffff;
+
+            --section: #fafafa;
+
+            --card: #ffffff;
+
+            --shadow:
+                0 10px 35px rgba(0, 0, 0, .05);
+
+            --radius: 22px;
+
+            --transition:
+                .35s ease;
+
+            --max-width:
+                1350px;
+
+        }
+
+        /* ========================================================= */
+        /* RESET */
+        /* ========================================================= */
+
+        *,
+        *::before,
+        *::after {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+        html {
+
+            scroll-behavior: smooth;
+
+        }
+
+        body {
+
+            background: var(--background);
+
+            color: var(--primary);
+
+            font-family: "Inter", sans-serif;
+
+            line-height: 1.75;
+
+            overflow-x: hidden;
+
+            text-rendering: optimizeLegibility;
+
+            -webkit-font-smoothing: antialiased;
+
+        }
+
+        img {
+
+            max-width: 100%;
+
+            display: block;
+
+        }
+
+        a {
+
+            text-decoration: none;
+
+            color: inherit;
+
+        }
+
+        ul {
+
+            list-style: none;
+
+        }
+
+        button {
+
+            border: none;
+
+            cursor: pointer;
+
+            font-family: inherit;
+
+        }
+
+        /* ========================================================= */
+        /* GLOBAL LAYOUT */
+        /* ========================================================= */
+
+        .container {
+
+            width: min(92%, var(--max-width));
+
+            margin-inline: auto;
+
+        }
+
+        section {
+
+            padding: 110px 0;
+
+        }
+
+        /* ========================================================= */
+        /* TYPOGRAPHY */
+        /* ========================================================= */
+
+        .section-tag {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: .5rem;
+
+            padding: .45rem 1rem;
+
+            border: 1px solid var(--border);
+
+            border-radius: 999px;
+
+            font-size: .8rem;
+
+            font-weight: 700;
+
+            letter-spacing: .12em;
+
+            text-transform: uppercase;
+
+            background: white;
+
+            margin-bottom: 20px;
+
+        }
+
+        .section-title {
+
+            font-size: clamp(2rem, 4vw, 3.8rem);
+
+            font-weight: 800;
+
+            line-height: 1.15;
+
+            letter-spacing: -.03em;
+
+            margin-bottom: 24px;
+
+        }
+
+        .section-description {
+
+            max-width: 760px;
+
+            color: var(--secondary);
+
+            font-size: 1.08rem;
+
+        }
+
+        /* ========================================================= */
+        /* GRID */
+        /* ========================================================= */
+
+        .grid-2 {
+
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 50px;
+
+        }
+
+        .grid-3 {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 30px;
+
+        }
+
+        .grid-4 {
+
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 24px;
+
+        }
+
+        /* ========================================================= */
+        /* CARD */
+        /* ========================================================= */
+
+        .card {
+
+            background: var(--card);
+
+            border: 1px solid var(--border);
+
+            border-radius: var(--radius);
+
+            padding: 34px;
+
+            transition: var(--transition);
+
+            box-shadow: var(--shadow);
+
+        }
+
+        .card:hover {
+
+            transform: translateY(-8px);
+
+        }
+
+        /* ========================================================= */
+        /* BUTTONS */
+        /* ========================================================= */
+
+        .btn {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: .6rem;
+
+            padding: 16px 30px;
+
+            border-radius: 999px;
+
+            font-weight: 700;
+
+            transition: var(--transition);
+
+        }
+
+        .btn-primary {
+
+            background: #111;
+
+            color: white;
+
+        }
+
+        .btn-primary:hover {
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 18px 35px rgba(0, 0, 0, .18);
+
+        }
+
+        .btn-outline {
+
+            border: 1px solid var(--border);
+
+            background: white;
+
+        }
+
+        .btn-outline:hover {
+
+            background: #111;
+
+            color: white;
+
+        }
+
+        /* ========================================================= */
+        /* RESPONSIVE FOUNDATION */
+        /* ========================================================= */
+
+        @media (max-width:1200px) {
+
+            .grid-4 {
+
+                grid-template-columns: repeat(2,1fr);
+
+            }
+
+            .grid-3 {
+
+                grid-template-columns: repeat(2,1fr);
+
+            }
+
+                        .grid-2 {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .section-title {
+
+                font-size: 3rem;
+
+            }
+
+        }
+
+        @media (max-width:768px) {
+
+            section {
+
+                padding: 80px 0;
+
+            }
+
+            .grid-4,
+            .grid-3 {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .container {
+
+                width: min(94%, var(--max-width));
+
+            }
+
+            .section-title {
+
+                font-size: 2.2rem;
+
+            }
+
+            .section-description {
+
+                font-size: 1rem;
+
+            }
+
+            .btn {
+
+                width: 100%;
+
+                justify-content: center;
+
+            }
+
+        }
+
+        /* ========================================================= */
+        /* HEADER */
+        /* ========================================================= */
+
+        .header {
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1000;
+
+            backdrop-filter: blur(18px);
+
+            background: rgba(255,255,255,.85);
+
+            border-bottom: 1px solid rgba(0,0,0,.06);
+
+        }
+
+        .navbar {
+
+            height: 78px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+        }
+
+        .logo {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: .9rem;
+
+            font-size: 1.35rem;
+
+            font-weight: 800;
+
+            letter-spacing: -.03em;
+
+        }
+
+        .logo-icon {
+
+            width: 46px;
+
+            height: 46px;
+
+            border-radius: 14px;
+
+            background: #111;
+
+            color: white;
+
+            display: grid;
+
+            place-items: center;
+
+            font-weight: 800;
+
+            font-size: 1.1rem;
+
+        }
+
+        .nav-links {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 2rem;
+
+        }
+
+        .nav-links a {
+
+            color: var(--secondary);
+
+            font-weight: 600;
+
+            transition: .25s;
+
+        }
+
+        .nav-links a:hover {
+
+            color: #111;
+
+        }
+
+        /* ========================================================= */
+        /* HERO */
+        /* ========================================================= */
+
+        .hero {
+
+            padding: 90px 0 70px;
+
+        }
+
+        .hero-grid {
+
+            display: grid;
+
+            grid-template-columns: 1.15fr .85fr;
+
+            gap: 60px;
+
+            align-items: center;
+
+        }
+
+        .hero-badge {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: .6rem;
+
+            padding: .55rem 1rem;
+
+            background: #f7f7f7;
+
+            border: 1px solid var(--border);
+
+            border-radius: 999px;
+
+            font-size: .85rem;
+
+            font-weight: 700;
+
+            margin-bottom: 24px;
+
+        }
+
+        .hero-title {
+
+            font-size: clamp(2.8rem,5vw,5rem);
+
+            font-weight: 800;
+
+            line-height: 1.08;
+
+            letter-spacing: -.05em;
+
+            margin-bottom: 24px;
+
+        }
+
+        .hero-description {
+
+            max-width: 720px;
+
+            color: var(--secondary);
+
+            font-size: 1.1rem;
+
+            margin-bottom: 40px;
+
+        }
+
+        .hero-buttons {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 16px;
+
+            margin-bottom: 50px;
+
+        }
+
+        .hero-stats {
+
+            display: grid;
+
+            grid-template-columns: repeat(4,1fr);
+
+            gap: 18px;
+
+        }
+
+        .stat-card {
+
+            background: white;
+
+            border: 1px solid var(--border);
+
+            border-radius: 18px;
+
+            padding: 22px;
+
+            transition: .35s;
+
+            box-shadow: var(--shadow);
+
+        }
+
+        .stat-card:hover {
+
+            transform: translateY(-6px);
+
+        }
+
+        .stat-number {
+
+            font-size: 2rem;
+
+            font-weight: 800;
+
+            margin-bottom: 6px;
+
+        }
+
+        .stat-label {
+
+            color: var(--secondary);
+
+            font-size: .9rem;
+
+        }
+
+        .hero-preview {
+
+            position: relative;
+
+        }
+
+        .preview-card {
+
+            background: white;
+
+            border: 1px solid var(--border);
+
+            border-radius: 30px;
+
+            padding: 35px;
+
+            box-shadow: 0 35px 80px rgba(0,0,0,.08);
+
+        }
+
+        .preview-header {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            margin-bottom: 30px;
+
+        }
+
+        .preview-title {
+
+            font-size: 1.3rem;
+
+            font-weight: 700;
+
+        }
+
+        .score-circle {
+
+            width: 130px;
+
+            height: 130px;
+
+            border-radius: 50%;
+
+            background: #111;
+
+            color: white;
+
+            display: grid;
+
+            place-items: center;
+
+            font-size: 2.2rem;
+
+            font-weight: 800;
+
+            margin: 20px auto 35px;
+
+        }
+
+        .score-list {
+
+            display: grid;
+
+            gap: 14px;
+
+        }
+
+        .score-item {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            padding: 14px 18px;
+
+            border-radius: 14px;
+
+            background: #fafafa;
+
+            border: 1px solid var(--border);
+
+        }
+
+        .score-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 14px 18px;
+
+    border-radius: 14px;
+
+    background: #fafafa;
+
+    border: 1px solid var(--border);
+
+}
+                .score-value{
+
+            font-weight:700;
+
+            color:#111;
+
+        }
+
+        /* ========================================================= */
+        /* CONTINUES IN PART 2B */
+        /* ========================================================= */
+
+    </style>
+    <link rel="stylesheet" href="https://buildfeatures.github.io/buildfeatures/components/community.css">
+
+</head>
+
+<body data-feature-slug="jwt-authentication">
+
+    <!-- ========================================================= -->
+    <!-- HEADER -->
+    <!-- ========================================================= -->
+
+    <header class="header">
+
+        <div class="container navbar">
+
+            <a
+                href="#"
+                class="logo">
+
+                <div class="logo-icon">
+
+                    BF
+
+                </div>
+
+                <span>
+
+                    BuildFeatures
+
+                </span>
+
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="#overview">
+
+                    Overview
+
+                </a>
+
+                <a href="#workflow">
+
+                    Workflow
+
+                </a>
+
+                <a href="#technology">
+
+                    Technology
+
+                </a>
+
+                <a href="#roadmap">
+
+                    Roadmap
+
+                </a>
+
+                <a href="#comparison">
+
+                    Comparison
+
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- ========================================================= -->
+    <!-- HERO -->
+    <!-- ========================================================= -->
+
+    <section class="hero">
+
+        <div class="container hero-grid">
+
+            <!-- LEFT -->
+
+            <div>
+
+                <div class="hero-badge">
+
+                    ⭐ Production Ready Documentation
+
+                </div>
+
+                <h1 class="hero-title">
+
+                    Trust Meter
+
+                    <br>
+
+                    Software Feature
+
+                </h1>
+
+                <p class="hero-description">
+
+                    Trust Meter is a dynamic scoring system that evaluates user
+                    reliability using behavioral signals, verification status,
+                    activity history, and business rules.
+
+                    Instead of treating every user equally, the feature
+                    continuously updates a trust score that helps applications
+                    make smarter and safer decisions.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#overview"
+                        class="btn btn-primary">
+
+                        Read Documentation
+
+                    </a>
+
+                    <a
+                        href="#workflow"
+                        class="btn btn-outline">
+
+                        Explore Workflow
+
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div class="stat-card">
+
+                        <div class="stat-number">
+
+                            10
+
+                        </div>
+
+                        <div class="stat-label">
+
+                            Core Sections
+
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-number">
+
+                            ⭐⭐⭐⭐☆
+
+                        </div>
+
+                        <div class="stat-label">
+
+                            Complexity
+
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-number">
+
+                            High
+
+                        </div>
+
+                        <div class="stat-label">
+
+                            Security Value
+
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-number">
+
+                            SaaS+
+
+                        </div>
+
+                        <div class="stat-label">
+
+                            Industries
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT -->
+
+            <div class="hero-preview">
+
+                <div class="preview-card">
+
+                    <div class="preview-header">
+
+                        <div class="preview-title">
+
+                            Live Trust Score
+
+                        </div>
+
+                        <div>
+
+                            Active
+
+                        </div>
+
+                    </div>
+
+                    <div class="score-circle">
+
+                        92
+
+                    </div>
+
+                    <div class="score-list">
+
+                        <div class="score-item">
+
+                            <span>
+
+                                Identity Verified
+
+                            </span>
+
+                            <span class="score-value">
+
+                                +25
+
+                            </span>
+
+                        </div>
+
+                        <div class="score-item">
+
+                            <span>
+
+                                Purchase History
+
+                            </span>
+
+                            <span class="score-value">
+
+                                +18
+
+                            </span>
+
+                        </div>
+
+                        <div class="score-item">
+
+                            <span>
+
+                                Community Reputation
+
+                            </span>
+
+                            <span class="score-value">
+
+                                +14
+
+                            </span>
+
+                        </div>
+
+                        <div class="score-item">
+
+                            <span>
+
+                                Recent Activity
+
+                            </span>
+
+                            <span class="score-value">
+
+                                +11
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- FEATURE OVERVIEW -->
+    <!-- ========================================================= -->
+
+    <section id="overview">
+
+        <div class="container">
+
+            <div class="section-tag">
+
+                📖
+
+                Feature Overview
+
+            </div>
+
+            <h2 class="section-title">
+
+                What is Trust Meter?
+
+            </h2>
+
+            <p class="section-description">
+
+                Trust Meter is a software feature that continuously evaluates the
+                reliability of users, customers, partners, or sellers based on
+                behavioral patterns, verification status, historical activity,
+                and predefined business rules.
+
+                Instead of relying on a single verification event, Trust Meter
+                updates dynamically as new actions occur, allowing businesses to
+                make smarter, faster, and safer decisions throughout the user
+                lifecycle.
+
+            </p>
+
+            <br><br>
+
+            <div class="grid-2">
+
+                <div class="card">
+
+                    <h3>
+
+                        Why It Exists
+
+                    </h3>
+
+                    <br>
+
+                    <p>
+
+                        Traditional systems often treat every verified user the
+                        same. Trust Meter introduces continuous evaluation,
+                        allowing applications to identify trustworthy behavior,
+                        reduce fraud, automate decisions, and improve customer
+                        confidence without relying solely on manual reviews.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+
+                        Problems It Solves
+
+                    </h3>
+
+                    <br>
+
+                    <ul>
+
+                        <li>✔ Reduce fraudulent activity</li>
+
+                        <li>✔ Detect suspicious behavior early</li>
+
+                        <li>✔ Improve business automation</li>
+
+                        <li>✔ Build customer confidence</li>
+
+                        <li>✔ Enable risk-based decisions</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- CONTINUES IN PART 2B -->
+    <!-- ========================================================= -->
+    
+<!-- ========================================================= -->
+    <!-- WHERE CAN YOU USE IT? -->
+    <!-- ========================================================= -->
+
+    <section id="use-cases">
+
+        <div class="container">
+
+            <div class="section-tag">
+
+                🌍
+
+                Where Can You Use It?
+
+            </div>
+
+            <h2 class="section-title">
+
+                Industry Applications
+
+            </h2>
+
+            <p class="section-description">
+
+                Trust Meter is a flexible feature that can be integrated into
+                applications where reputation, credibility, fraud prevention,
+                identity verification, or behavioral analysis influence
+                business decisions.
+
+            </p>
+
+            <br><br>
+
+            <div class="card">
+
+                <div style="overflow-x:auto;">
+
+                    <table style="width:100%;border-collapse:collapse;">
+
+                        <thead>
+
+                            <tr>
+
+                                <th style="text-align:left;padding:18px;border-bottom:1px solid #e8e8e8;">
+                                    Industry
+                                </th>
+
+                                <th style="text-align:left;padding:18px;border-bottom:1px solid #e8e8e8;">
+                                    Primary Use Case
+                                </th>
+
+                                <th style="text-align:left;padding:18px;border-bottom:1px solid #e8e8e8;">
+                                    Business Value
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td style="padding:18px;">🏦 Banking</td>
+
+                                <td style="padding:18px;">Fraud Prevention</td>
+
+                                <td style="padding:18px;">Reduce financial risk</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td style="padding:18px;">🛒 E-commerce</td>
+
+                                <td style="padding:18px;">Buyer & Seller Trust</td>
+
+                                <td style="padding:18px;">Increase successful transactions</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td style="padding:18px;">🏥 Healthcare</td>
+
+                                <td style="padding:18px;">Patient Verification</td>
+
+                                <td style="padding:18px;">Improve security</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td style="padding:18px;">🎓 Education</td>
+
+                                <td style="padding:18px;">Student Credibility</td>
+
+                                <td style="padding:18px;">Reduce abuse</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td style="padding:18px;">☁ SaaS</td>
+
+                                <td style="padding:18px;">User Reputation</td>
+
+                                <td style="padding:18px;">Smarter automation</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td style="padding:18px;">🛍 Marketplace</td>
+
+                                <td style="padding:18px;">Seller Trust</td>
+
+                                <td style="padding:18px;">Safer transactions</td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- BENEFITS & LIMITATIONS -->
+    <!-- ========================================================= -->
+
+    <section id="benefits">
+
+        <div class="container">
+
+            <div class="section-tag">
+
+                ✅
+
+                Benefits & Limitations
+
+            </div>
+
+            <h2 class="section-title">
+
+                Strengths and Trade-Offs
+
+            </h2>
+
+            <p class="section-description">
+
+                Every software feature offers advantages and introduces
+                implementation considerations. Understanding both helps teams
+                decide whether Trust Meter is the right fit.
+
+            </p>
+
+            <br><br>
+
+            <div class="grid-2">
+
+                <div class="card">
+
+                    <h3>
+
+                        ✅ Benefits
+
+                    </h3>
+
+                    <br>
+
+                    <ul>
+
+                        <li>✔ Improves platform security</li>
+                        <li>✔ Reduces fraud and abuse</li>
+                        <li>✔ Enables smarter automation</li>
+                        <li>✔ Increases customer confidence</li>
+                        <li>✔ Supports risk-based decisions</li>
+                        <li>✔ Continuously adapts to behavior</li>
+                        <li>✔ Reduces manual verification work</li>
+                        <li>✔ Helps prioritize trusted users</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+
+                        ⚠ Limitations
+
+                    </h3>
+
+                    <br>
+
+                    <ul>
+
+                        <li>⚠ Requires historical activity</li>
+                        <li>⚠ Business rules require tuning</li>
+                        <li>⚠ Possible false positives</li>
+                        <li>⚠ Continuous monitoring required</li>
+                        <li>⚠ Scoring models evolve over time</li>
+                        <li>⚠ Additional database storage</li>
+                        <li>⚠ Needs quality event tracking</li>
+                        <li>⚠ Not useful for static websites</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- TECHNOLOGY REQUIREMENTS -->
+    <!-- ========================================================= -->
+
+    <section id="technology">
+
+        <div class="container">
+
+            <div class="section-tag">
+
+                🛠
+
+                Technology Requirements
+
+            </div>
+
+            <h2 class="section-title">
+
+                Components Typically Required
+
+            </h2>
+
+            <p class="section-description">
+
+                Trust Meter does not rely on a single technology.
+                It combines multiple software components that work together
+                to calculate, store, and update trust scores efficiently.
+
+            </p>
+
+            <br><br>
+
+            <div class="grid-3">
+
+                <div class="card">
+
+                    <h3>
+
+                        🗄 Database
+
+                    </h3>
+
+                    <br>
+
+                    <p>
+
+                        Stores trust scores, historical activities,
+                        user reputation, verification status,
+                        and behavioral records.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+
+                        🔐 Authentication
+
+                    </h3>
+
+                    <br>
+
+                    <p>
+
+                        Verifies user identity before assigning
+                        credibility signals and trust calculations.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+
+                        📈 Event Tracking
+
+                    </h3>
+
+                    <br>
+
+                    <p>
+
+                        Records user actions including logins,
+                        purchases, reviews, reports,
+                        and other behavioral events.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+
+                        ⚙ Rule Engine
+
+                    </h3>
+
+                    <br>
+
+                    <p>
+
+                        Applies configurable business rules
+                        to calculate trust scores and
+                        determine risk levels.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+
+                        📊 Analytics
+
+                    </h3>
+
+                    <br>
+
+                    <p>
+
+                        Measures trends,
+                        monitors score changes,
+                        and evaluates system accuracy.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+
+                        🔔 Notifications
+
+                    </h3>
+
+                    <br>
+
+                    <p>
+
+                        Alerts administrators or users
+                        when trust levels change,
+                        suspicious behavior occurs,
+                        or manual review is required.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- CONTINUES IN PART 2C -->
+    <!-- ========================================================= -->
+    <!-- ========================================================= -->
+    <!-- HOW IT WORKS -->
+    <!-- ========================================================= -->
+
+    <!-- ========================================================= -->
+<!-- HOW IT WORKS -->
+<!-- ========================================================= -->
+
+<section id="workflow">
+
+    <div class="container">
+
+        <div class="section-tag">
+
+            ⚙️
+
+            How It Works
+
+        </div>
+
+        <h2 class="section-title">
+
+            How Trust Meter Works
+
+        </h2>
+
+        <p class="section-description">
+
+            Trust Meter continuously evaluates user reliability by collecting
+            behavioral data, applying business rules, calculating a trust score,
+            and automatically updating decisions whenever new user activity occurs.
+
+        </p>
+
+        <br><br>
+
+        <div class="card">
+
+<pre style="font-family:inherit;line-height:2;color:#555;white-space:pre-wrap;">
+
+User Registers
+
+↓
+
+Verify Identity
+
+↓
+
+Collect User Activities
+
+↓
+
+Analyze User Behavior
+
+↓
+
+Apply Business Rules
+
+↓
+
+Calculate Trust Score
+
+↓
+
+Assign Trust Level
+
+↓
+
+Take Business Action
+
+↓
+
+Continuously Update
+
+</pre>
+
+        </div>
+
+        <br><br>
+
+        <div class="grid-2">
+
+            <div class="card">
+
+                <h3>
+
+                    Workflow Explanation
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Every important user action becomes a trust signal.
+                    The system records activities such as account verification,
+                    purchases, reviews, logins, payments, and reports.
+                    These signals are analyzed using predefined business rules
+                    to calculate a dynamic trust score that changes over time.
+
+                </p>
+
+                <br>
+
+                <p>
+
+                    Based on the latest score, the application automatically
+                    determines whether to approve, review, restrict, or reject
+                    specific actions, helping businesses reduce fraud while
+                    rewarding trustworthy users.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Real-World Example
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    A customer creates an account, verifies their email,
+                    completes several successful purchases, receives positive
+                    reviews, and has no fraud reports.
+
+                </p>
+
+                <br>
+
+                <ul>
+
+                    <li>✔ Email Verified (+10)</li>
+
+                    <li>✔ Phone Verified (+10)</li>
+
+                    <li>✔ Successful Purchases (+15)</li>
+
+                    <li>✔ Positive Reviews (+8)</li>
+
+                    <li>✔ No Fraud Reports (+7)</li>
+
+                </ul>
+
+                <br>
+
+                <p>
+
+                    <strong>Final Trust Score:</strong> 90/100
+
+                    <br><br>
+
+                    <strong>Business Decision:</strong>
+
+                    Automatically approve transactions and classify the user as
+                    <strong>Highly Trusted</strong>.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- ========================================================= -->
+    <!-- IMPLEMENTATION ROADMAP -->
+    <!-- ========================================================= -->
+
+    <section id="roadmap">
+
+        <div class="container">
+
+            <div class="section-tag">
+
+                🗺️
+
+                Implementation Roadmap
+
+            </div>
+
+            <h2 class="section-title">
+
+                High-Level Implementation Plan
+
+            </h2>
+
+            <p class="section-description">
+
+                The roadmap below outlines the typical stages required to plan,
+                build, deploy, and continuously improve a Trust Meter feature.
+
+            </p>
+
+            <br><br>
+
+            <div class="card">
+
+<pre style="font-family:inherit;line-height:2;color:#555;white-space:pre-wrap;">
+
+Define Trust Rules
+
+↓
+
+Collect User Events
+
+↓
+
+Store Activity History
+
+↓
+
+Calculate Trust Scores
+
+↓
+
+Assign Risk Categories
+
+↓
+
+Display Results
+
+↓
+
+Monitor Performance
+
+↓
+
+Review & Improve
+
+</pre>
+
+            </div>
+
+            <br>
+
+            <div class="grid-4">
+
+                <div class="card">
+
+                    <h3>1. Planning</h3>
+
+                    <br>
+
+                    <p>
+
+                        Define score ranges, trusted behaviors,
+                        penalties, and business objectives.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>2. Development</h3>
+
+                    <br>
+
+                    <p>
+
+                        Integrate event tracking, databases,
+                        authentication, and rule processing.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>3. Deployment</h3>
+
+                    <br>
+
+                    <p>
+
+                        Launch scoring logic, monitor
+                        user behavior, and validate accuracy.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>4. Optimization</h3>
+
+                    <br>
+
+                    <p>
+
+                        Refine business rules,
+                        improve detection quality,
+                        and reduce false positives.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- COMPARISON -->
+    <!-- ========================================================= -->
+
+    <section id="comparison">
+
+        <div class="container">
+
+            <div class="section-tag">
+
+                ⚖️
+
+                Comparison
+
+            </div>
+
+            <h2 class="section-title">
+
+                Trust Meter vs Alternative Solutions
+
+            </h2>
+
+            <p class="section-description">
+
+                Trust Meter complements existing security mechanisms by providing
+                continuous behavioral analysis rather than relying only on
+                one-time verification methods.
+
+            </p>
+
+            <br><br>
+
+            <div class="card">
+
+                <div style="overflow-x:auto;">
+
+                    <table style="width:100%;border-collapse:collapse;">
+
+                        <thead>
+
+                            <tr>
+
+                                <th style="padding:18px;text-align:left;border-bottom:1px solid #e8e8e8;">
+                                    Capability
+                                </th>
+
+                                <th style="padding:18px;text-align:center;border-bottom:1px solid #e8e8e8;">
+                                    Trust Meter
+                                </th>
+
+                                <th style="padding:18px;text-align:center;border-bottom:1px solid #e8e8e8;">
+                                    KYC
+                                </th>
+
+                                <th style="padding:18px;text-align:center;border-bottom:1px solid #e8e8e8;">
+                                    Email Verification
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td style="padding:18px;">
+                                    Real-Time Updates
+                                </td>
+
+                                <td style="padding:18px;text-align:center;">✅</td>
+
+                                <td style="padding:18px;text-align:center;">❌</td>
+
+                                <td style="padding:18px;text-align:center;">❌</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td style="padding:18px;">
+                                    Behavioral Analysis
+                                </td>
+
+                                <td style="padding:18px;text-align:center;">✅</td>
+
+                                <td style="padding:18px;text-align:center;">❌</td>
+
+                                <td style="padding:18px;text-align:center;">❌</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td style="padding:18px;">
+                                    Fraud Detection
+                                </td>
+
+                                <td style="padding:18px;text-align:center;">✅</td>
+
+                                <td style="padding:18px;text-align:center;">⚠️</td>
+
+                                <td style="padding:18px;text-align:center;">❌</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td style="padding:18px;">
+                                    Easy to Start
+                                </td>
+
+                                <td style="padding:18px;text-align:center;">⚠️</td>
+
+                                <td style="padding:18px;text-align:center;">❌</td>
+
+                                <td style="padding:18px;text-align:center;">✅</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td style="padding:18px;">
+                                    Continuous Scoring
+                                </td>
+
+                                <td style="padding:18px;text-align:center;">✅</td>
+
+                                <td style="padding:18px;text-align:center;">❌</td>
+
+                                <td style="padding:18px;text-align:center;">❌</td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- CONTINUES IN PART 3A -->
+    <!-- ========================================================= -->
+    <!-- ========================================================= -->
+    <!-- DEVELOPER CHECKLIST -->
+    <!-- ========================================================= -->
+
+    <section id="checklist">
+
+        <div class="container">
+
+            <div class="section-tag">
+
+                ✔️
+
+                Developer Checklist
+
+            </div>
+
+            <h2 class="section-title">
+
+                Implementation Planning Checklist
+
+            </h2>
+
+            <p class="section-description">
+
+                Before implementing Trust Meter, review the following checklist
+                to ensure your application has the required components,
+                business rules, and monitoring strategy.
+
+            </p>
+
+            <br><br>
+
+            <div class="grid-2">
+
+                <div class="card">
+
+                    <h3>
+
+                        Planning Checklist
+
+                    </h3>
+
+                    <br>
+
+                    <ul>
+
+                        <li>☐ Identify user activities to monitor</li>
+
+                        <li>☐ Define trust scoring rules</li>
+
+                        <li>☐ Decide minimum and maximum score</li>
+
+                        <li>☐ Define trust levels</li>
+
+                        <li>☐ Define risk levels</li>
+
+                        <li>☐ Identify suspicious behaviors</li>
+
+                        <li>☐ Create business automation rules</li>
+
+                        <li>☐ Define review process</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+
+                        Technical Checklist
+
+                    </h3>
+
+                    <br>
+
+                    <ul>
+
+                        <li>☐ Authentication system</li>
+
+                        <li>☐ User database</li>
+
+                        <li>☐ Event tracking</li>
+
+                        <li>☐ Trust score storage</li>
+
+                        <li>☐ Rule engine</li>
+
+                        <li>☐ Analytics dashboard</li>
+
+                        <li>☐ Notification service</li>
+
+                        <li>☐ Monitoring & logging</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- COMPLEXITY & BUSINESS IMPACT -->
+    <!-- ========================================================= -->
+
+    <section id="complexity">
+
+        <div class="container">
+
+            <div class="section-tag">
+
+                📊
+
+                Complexity & Business Impact
+
+            </div>
+
+            <h2 class="section-title">
+
+                Development Effort Overview
+
+            </h2>
+
+            <p class="section-description">
+
+                The following ratings provide a high-level estimate of the
+                development effort, scalability, maintenance requirements,
+                performance impact, and overall business value of implementing
+                Trust Meter.
+
+            </p>
+
+            <br><br>
+
+            <div class="grid-3">
+
+                <div class="card">
+
+                    <h3>
+
+                        Development Complexity
+
+                    </h3>
+
+                    <br>
+
+                    <div class="stat-number">
+
+                        ⭐⭐⭐⭐☆
+
+                    </div>
+
+                    <p>
+
+                        Requires multiple integrated components including
+                        authentication, event tracking, business rules,
+                        databases, and analytics.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+
+                        Maintenance
+
+                    </h3>
+
+                    <br>
+
+                    <div class="stat-number">
+
+                        ⭐⭐⭐☆☆
+
+                    </div>
+
+                    <p>
+
+                        Business rules should be reviewed regularly as user
+                        behavior and fraud patterns evolve.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+
+                        Scalability
+
+                    </h3>
+
+                    <br>
+
+                    <div class="stat-number">
+
+                        ⭐⭐⭐⭐⭐
+
+                    </div>
+
+                    <p>
+
+                        Suitable for startups through enterprise platforms when
+                        implemented with efficient event processing.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+
+                        Performance Impact
+
+                    </h3>
+
+                    <br>
+
+                    <div class="stat-number">
+
+                        ⭐⭐☆☆☆
+
+                    </div>
+
+                    <p>
+
+                        Minimal when background processing and asynchronous
+                        event pipelines are used effectively.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+
+                        Security Value
+
+                    </h3>
+
+                    <br>
+
+                    <div class="stat-number">
+
+                        ⭐⭐⭐⭐⭐
+
+                    </div>
+
+                    <p>
+
+                        Significantly improves fraud detection,
+                        trust assessment, and automated risk-based decisions.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+
+                        Business Value
+
+                    </h3>
+
+                    <br>
+
+                    <div class="stat-number">
+
+                        ⭐⭐⭐⭐⭐
+
+                    </div>
+
+                    <p>
+
+                        Delivers measurable improvements in customer confidence,
+                        operational efficiency, and platform reliability.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- CONTINUES IN PART 3B -->
+    <!-- ========================================================= -->
+    <!-- ========================================================= -->
+    <!-- FREQUENTLY ASKED QUESTIONS -->
+    <!-- ========================================================= -->
+
+    <section id="faq">
+
+        <div class="container">
+
+            <div class="section-tag">
+
+                ❓
+
+                Frequently Asked Questions
+
+            </div>
+
+            <h2 class="section-title">
+
+                Common Questions
+
+            </h2>
+
+            <p class="section-description">
+
+                These are some of the most common questions developers ask
+                before implementing a Trust Meter feature.
+
+            </p>
+
+            <br><br>
+
+            <div class="grid-2">
+
+                <div class="card">
+
+                    <h3>
+
+                        Is Trust Meter the same as KYC?
+
+                    </h3>
+
+                    <br>
+
+                    <p>
+
+                        No. KYC verifies identity once, while Trust Meter
+                        continuously evaluates user behavior over time.
+                        They complement each other rather than replace
+                        one another.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+
+                        Can it work without user accounts?
+
+                    </h3>
+
+                    <br>
+
+                    <p>
+
+                        Generally no. Trust Meter relies on historical
+                        user activity, verification status, and behavioral
+                        signals. Applications without identifiable users
+                        gain very little benefit.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+
+                        Does Trust Meter improve security?
+
+                    </h3>
+
+                    <br>
+
+                    <p>
+
+                        Yes. It helps identify suspicious activity,
+                        reduce fraud, prioritize trusted users,
+                        and automate risk-based decisions.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+
+                        Is machine learning required?
+
+                    </h3>
+
+                    <br>
+
+                    <p>
+
+                        No.
+
+                        Many Trust Meter implementations begin with
+                        simple business rules.
+
+                        Machine learning can be added later for more
+                        advanced scoring and prediction.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- RELATED FEATURES -->
+    <!-- ========================================================= -->
+
+    <section id="related">
+
+        <div class="container">
+
+            <div class="section-tag">
+
+                🔗
+
+                Related Features
+
+            </div>
+
+            <h2 class="section-title">
+
+                Features You May Also Like
+
+            </h2>
+
+            <p class="section-description">
+
+                Trust Meter is often implemented together with other
+                software features that improve security,
+                automation, and user experience.
+
+            </p>
+
+            <br><br>
+
+            <div class="grid-4">
+
+                <div class="card">
+
+                    <h3>
+
+                        Adaptive Authentication
+
+                    </h3>
+
+                    <br>
+
+                    <p>
+
+                        Adjust login security based on user
+                        behavior and calculated trust.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+
+                        Fraud Detection Engine
+
+                    </h3>
+
+                    <br>
+
+                    <p>
+
+                        Detect suspicious transactions
+                        using behavioral analysis.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+
+                        Reputation System
+
+                    </h3>
+
+                    <br>
+
+                    <p>
+
+                        Build long-term credibility scores
+                        for buyers, sellers, and communities.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+
+                        Risk Assessment Engine
+
+                    </h3>
+
+                    <br>
+
+                    <p>
+
+                        Automatically classify activities
+                        into low, medium, or high risk.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- NEXT STEPS -->
+    <!-- ========================================================= -->
+
+    <section id="next">
+
+        <div class="container">
+
+            <div class="card"
+                style="text-align:center;padding:70px;">
+
+                <div class="section-tag">
+
+                    🚀
+
+                    Continue Learning
+
+                </div>
+
+                <h2 class="section-title">
+
+                    Explore More Software Features
+
+                </h2>
+
+                <p class="section-description"
+                    style="margin-inline:auto;">
+
+                    BuildFeatures provides production-ready feature
+                    documentation that helps developers understand,
+                    evaluate, compare, and plan software features
+                    before implementation.
+
+                </p>
+
+                <br><br>
+
+                <div class="hero-buttons"
+                    style="justify-content:center;">
+
+                    <a
+                        href="#"
+
+                        class="btn btn-primary">
+
+                        Browse Features
+
+                    </a>
+
+                    <a
+                        href="#"
+
+                        class="btn btn-outline">
+
+                        Back to Top
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section id="community"></section>
+
+    <!-- ========================================================= -->
+    <!-- FOOTER -->
+    <!-- ========================================================= -->
+
+    <footer
+        style="padding:45px 0;border-top:1px solid #e8e8e8;">
+
+        <div class="container"
+            style="display:flex;justify-content:space-between;align-items:center;gap:25px;flex-wrap:wrap;">
+
+            <div>
+
+                <strong>
+
+                    BuildFeatures
+
+                </strong>
+
+                <br>
+
+                Production-Ready Software Feature Library
+
+            </div>
+
+            <div
+                style="color:#666;">
+
+                © 2026 BuildFeatures.
+                All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ========================================================= -->
+    <!-- CONTINUES IN PART 3C -->
+    <!-- ========================================================= -->
+    <!-- ========================================================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ========================================================= -->
+
+    <script>
+
+        /* ========================================= */
+        /* SMOOTH ACTIVE NAVIGATION */
+        /* ========================================= */
+
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll(".nav-links a");
+
+        function activateMenu() {
+
+            let scrollY = window.pageYOffset;
+
+            sections.forEach(section => {
+
+                const sectionTop = section.offsetTop - 120;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute("id");
+
+                if (
+                    scrollY >= sectionTop &&
+                    scrollY < sectionTop + sectionHeight
+                ) {
+
+                    navLinks.forEach(link => {
+
+                        link.style.color = "";
+
+                        if (link.getAttribute("href") === "#" + sectionId) {
+
+                            link.style.color = "#111";
+                            link.style.fontWeight = "700";
+
+                        }
+
+                    });
+
+                }
+
+            });
+
+        }
+
+        window.addEventListener("scroll", activateMenu);
+
+        activateMenu();
+
+        /* ========================================= */
+        /* SCROLL TO TOP */
+        /* ========================================= */
+
+        document.querySelectorAll('a[href="#"]').forEach(button => {
+
+            button.addEventListener("click", function (event) {
+
+                event.preventDefault();
+
+                window.scrollTo({
+
+                    top: 0,
+
+                    behavior: "smooth"
+
+                });
+
+            });
+
+        });
+
+        /* ========================================= */
+        /* SIMPLE CARD ANIMATION */
+        /* ========================================= */
+
+        const cards = document.querySelectorAll(".card");
+
+        const observer = new IntersectionObserver(entries => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.style.opacity = "1";
+
+                    entry.target.style.transform = "translateY(0)";
+
+                }
+
+            });
+
+        }, {
+
+            threshold: .15
+
+        });
+
+        cards.forEach(card => {
+
+            card.style.opacity = "0";
+
+            card.style.transform = "translateY(40px)";
+
+            card.style.transition = ".6s ease";
+
+            observer.observe(card);
+
+        });
+
+    </script>
+    <script src="https://buildfeatures.github.io/buildfeatures/components/community.js"></script>
+
+</body>
+
+</html>
