@@ -1575,58 +1575,55 @@
     <!-- HOW IT WORKS -->
     <!-- ========================================================= -->
 
-    <section id="workflow">
+    <!-- ========================================================= -->
+<!-- HOW IT WORKS -->
+<!-- ========================================================= -->
 
-        <div class="container">
+<section id="workflow">
 
-            <div class="section-tag">
+    <div class="container">
 
-                ⚙️
+        <div class="section-tag">
 
-                How It Works
+            ⚙️
 
-            </div>
+            How It Works
 
-            <h2 class="section-title">
+        </div>
 
-                Trust Meter Workflow
+        <h2 class="section-title">
 
-            </h2>
+            How Trust Meter Works
 
-            <p class="section-description">
+        </h2>
 
-                Trust Meter continuously evaluates user reliability by collecting
-                behavioral information, applying business rules, calculating a
-                trust score, and updating the result whenever new user activity
-                occurs.
+        <p class="section-description">
 
-            </p>
+            Trust Meter continuously evaluates user reliability by collecting
+            behavioral data, applying business rules, calculating a trust score,
+            and automatically updating decisions whenever new user activity occurs.
 
-            <br><br>
+        </p>
 
-            <div class="grid-2">
+        <br><br>
 
-                <div class="card">
-
-                    <h3>
-
-                        Workflow Overview
-
-                    </h3>
-
-                    <br>
+        <div class="card">
 
 <pre style="font-family:inherit;line-height:2;color:#555;white-space:pre-wrap;">
 
-User Action
+User Registers
 
 ↓
 
-Collect User Signals
+Verify Identity
 
 ↓
 
-Analyze Activity
+Collect User Activities
+
+↓
+
+Analyze User Behavior
 
 ↓
 
@@ -1638,11 +1635,11 @@ Calculate Trust Score
 
 ↓
 
-Assign Risk Level
+Assign Trust Level
 
 ↓
 
-Business Decision
+Take Business Action
 
 ↓
 
@@ -1650,38 +1647,101 @@ Continuously Update
 
 </pre>
 
-                </div>
+        </div>
 
-                <div class="card">
+        <br><br>
 
-                    <h3>
+        <div class="grid-2">
 
-                        Step-by-Step Explanation
+            <div class="card">
 
-                    </h3>
+                <h3>
 
-                    <br>
+                    Workflow Explanation
 
-                    <p>
+                </h3>
 
-                        Every user action generates valuable signals such as
-                        purchases, logins, reviews, reports, or verification
-                        updates. These signals are collected and analyzed by
-                        predefined business rules. The resulting trust score is
-                        recalculated and categorized into a risk level that helps
-                        applications automate decisions while continuously
-                        adapting to changing user behavior.
+                <br>
 
-                    </p>
+                <p>
 
-                </div>
+                    Every important user action becomes a trust signal.
+                    The system records activities such as account verification,
+                    purchases, reviews, logins, payments, and reports.
+                    These signals are analyzed using predefined business rules
+                    to calculate a dynamic trust score that changes over time.
+
+                </p>
+
+                <br>
+
+                <p>
+
+                    Based on the latest score, the application automatically
+                    determines whether to approve, review, restrict, or reject
+                    specific actions, helping businesses reduce fraud while
+                    rewarding trustworthy users.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Real-World Example
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    A customer creates an account, verifies their email,
+                    completes several successful purchases, receives positive
+                    reviews, and has no fraud reports.
+
+                </p>
+
+                <br>
+
+                <ul>
+
+                    <li>✔ Email Verified (+10)</li>
+
+                    <li>✔ Phone Verified (+10)</li>
+
+                    <li>✔ Successful Purchases (+15)</li>
+
+                    <li>✔ Positive Reviews (+8)</li>
+
+                    <li>✔ No Fraud Reports (+7)</li>
+
+                </ul>
+
+                <br>
+
+                <p>
+
+                    <strong>Final Trust Score:</strong> 90/100
+
+                    <br><br>
+
+                    <strong>Business Decision:</strong>
+
+                    Automatically approve transactions and classify the user as
+                    <strong>Highly Trusted</strong>.
+
+                </p>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
 
+</section>
     <!-- ========================================================= -->
     <!-- IMPLEMENTATION ROADMAP -->
     <!-- ========================================================= -->
