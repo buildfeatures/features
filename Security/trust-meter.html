@@ -782,6 +782,244 @@
         /* ========================================================= */
         /* CONTINUES IN PART 2B */
         /* ========================================================= */
+        /* ========================================================= */
+/* COMPLETE MOBILE RESPONSIVE */
+/* ========================================================= */
+
+@media (max-width:992px){
+
+.hero-grid{
+
+grid-template-columns:1fr;
+
+gap:50px;
+
+}
+
+.hero-preview{
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+.hero-stats{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media (max-width:768px){
+
+.header{
+
+position:relative;
+
+}
+
+.navbar{
+
+height:auto;
+
+padding:20px 0;
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:20px;
+
+}
+
+.logo{
+
+font-size:1.15rem;
+
+}
+
+.logo-icon{
+
+width:40px;
+
+height:40px;
+
+}
+
+.nav-links{
+
+width:100%;
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:12px;
+
+}
+
+.nav-links a{
+
+padding:8px 0;
+
+}
+
+.hero{
+
+padding:60px 0;
+
+}
+
+.hero-title{
+
+font-size:2.3rem;
+
+line-height:1.15;
+
+}
+
+.hero-description{
+
+font-size:1rem;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
+
+.hero-buttons .btn{
+
+width:100%;
+
+}
+
+.hero-stats{
+
+grid-template-columns:1fr;
+
+}
+
+.stat-card{
+
+padding:18px;
+
+}
+
+.preview-card{
+
+padding:22px;
+
+}
+
+.score-circle{
+
+width:95px;
+
+height:95px;
+
+font-size:1.6rem;
+
+}
+
+.score-item{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:8px;
+
+}
+
+.card{
+
+padding:22px;
+
+}
+
+table{
+
+min-width:650px;
+
+}
+
+pre{
+
+font-size:14px;
+
+}
+
+.section-title{
+
+font-size:2rem;
+
+}
+
+.section-description{
+
+font-size:1rem;
+
+}
+
+footer .container{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+}
+
+@media (max-width:480px){
+
+.container{
+
+width:95%;
+
+}
+
+.hero-title{
+
+font-size:2rem;
+
+}
+
+.section-title{
+
+font-size:1.8rem;
+
+}
+
+.logo{
+
+font-size:1rem;
+
+}
+
+.score-circle{
+
+width:80px;
+
+height:80px;
+
+font-size:1.3rem;
+
+}
+
+}
+        .table-responsive{
+
+overflow-x:auto;
+
+-webkit-overflow-scrolling:touch;
+
+}
 
     </style>
     <link rel="stylesheet" href="https://buildfeatures.github.io/buildfeatures/components/community.css">
@@ -1221,7 +1459,7 @@
 
             <div class="card">
 
-                <div style="overflow-x:auto;">
+                <div class="table-responsive">
 
                     <table style="width:100%;border-collapse:collapse;">
 
@@ -1917,7 +2155,7 @@ Review & Improve
 
             <div class="card">
 
-                <div style="overflow-x:auto;">
+                <div class="table-responsive">
 
                     <table style="width:100%;border-collapse:collapse;">
 
