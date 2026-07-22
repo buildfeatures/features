@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ========================================================= -->
+    <!-- BUILDFEATURES -->
+    <!-- Production Ready Documentation Page -->
+    <!-- PART 1A -->
+    <!-- HTML HEAD + GLOBAL FOUNDATION -->
+    <!-- ========================================================= -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge">
+
+    <!-- ========================================================= -->
+    <!-- SEO -->
+    <!-- ========================================================= -->
+
+    <title>
+
+        Intent Memory Engine (IME) | BuildFeatures
+
+    </title>
+
+    <meta
+        name="description"
+        content="Production-ready documentation for the Intent Memory Engine (IME) feature. Learn how AI remembers user goals instead of history, enabling proactive assistance, personalized workflows, intelligent task continuation, and next-action recommendations.">
+
+    <meta
+        name="keywords"
+        content="Intent Memory Engine, IME, AI Memory, Goal Memory, Context Engine, AI Personalization, Smart Software Features, BuildFeatures, Production Ready Software">
+
+    <meta
+        name="author"
+        content="BuildFeatures">
+
+    <!-- ========================================================= -->
+    <!-- GOOGLE FONT -->
+    <!-- ========================================================= -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- ========================================================= -->
+    <!-- CSS -->
+    <!-- ========================================================= -->
+
+    <style>
+
+        /* ========================================================= */
+        /* ROOT VARIABLES */
+        /* ========================================================= */
+
+        :root {
+
+            --primary: #111111;
+
+            --secondary: #555555;
+
+            --light: #777777;
+
+            --border: #e8e8e8;
+
+            --background: #ffffff;
+
+            --section: #fafafa;
+
+            --card: #ffffff;
+
+            --shadow:
+                0 10px 35px rgba(0,0,0,.05);
+
+            --radius: 22px;
+
+            --transition:
+                .35s ease;
+
+            --max-width:
+                1350px;
+
+        }
+
+        /* ========================================================= */
+        /* RESET */
+        /* ========================================================= */
+
+        *,
+        *::before,
+        *::after {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+        html {
+
+            scroll-behavior: smooth;
+
+        }
+
+        body {
+
+            background: var(--background);
+
+            color: var(--primary);
+
+            font-family: "Inter", sans-serif;
+
+            line-height: 1.75;
+
+            overflow-x: hidden;
+
+            text-rendering: optimizeLegibility;
+
+            -webkit-font-smoothing: antialiased;
+
+        }
+
+        img {
+
+            max-width: 100%;
+
+            display: block;
+
+        }
+
+        a {
+
+            text-decoration: none;
+
+            color: inherit;
+
+        }
+
+        ul {
+
+            list-style: none;
+
+        }
+
+        button {
+
+            border: none;
+
+            cursor: pointer;
+
+            font-family: inherit;
+
+        }
+
+        /* ========================================================= */
+        /* GLOBAL LAYOUT */
+        /* ========================================================= */
+
+        .container {
+
+            width: min(92%, var(--max-width));
+
+            margin-inline: auto;
+
+        }
+
+        section {
+
+            padding: 110px 0;
+
+        }
+
+        /* ========================================================= */
+        /* TYPOGRAPHY */
+        /* ========================================================= */
+
+        .section-tag {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: .5rem;
+
+            padding: .45rem 1rem;
+
+            border: 1px solid var(--border);
+
+            border-radius: 999px;
+
+            font-size: .8rem;
+
+            font-weight: 700;
+
+            letter-spacing: .12em;
+
+            text-transform: uppercase;
+
+            background: white;
+
+            margin-bottom: 20px;
+
+        }
+
+        .section-title {
+
+            font-size: clamp(2rem, 4vw, 3.8rem);
+
+            font-weight: 800;
+
+            line-height: 1.15;
+
+            letter-spacing: -.03em;
+
+            margin-bottom: 24px;
+
+        }
+
+        .section-description {
+
+            max-width: 760px;
+
+            color: var(--secondary);
+
+            font-size: 1.08rem;
+
+        }
+
+        /* ========================================================= */
+        /* GRID */
+        /* ========================================================= */
+
+        .grid-2 {
+
+            display: grid;
+
+            grid-template-columns: repeat(2,1fr);
+
+            gap: 50px;
+
+        }
+
+        .grid-3 {
+
+            display: grid;
+
+            grid-template-columns: repeat(3,1fr);
+
+            gap: 30px;
+
+        }
+
+        .grid-4 {
+
+            display: grid;
+
+            grid-template-columns: repeat(4,1fr);
+
+            gap: 24px;
+
+        }
+
+        /* ========================================================= */
+        /* CARD */
+        /* ========================================================= */
+
+        .card {
+
+            background: var(--card);
+
+            border: 1px solid var(--border);
+
+            border-radius: var(--radius);
+
+            padding: 34px;
+
+            transition: var(--transition);
+
+            box-shadow: var(--shadow);
+
+        }
+
+        .card:hover {
+
+            transform: translateY(-8px);
+
+        }
+
+        /* ========================================================= */
+        /* BUTTONS */
+        /* ========================================================= */
+
+        .btn {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: .6rem;
+
+            padding: 16px 30px;
+
+            border-radius: 999px;
+
+            font-weight: 700;
+
+            transition: var(--transition);
+
+        }
+
+        .btn-primary {
+
+            background: #111;
+
+            color: white;
+
+        }
+
+        .btn-primary:hover {
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 18px 35px rgba(0,0,0,.18);
+
+        }
+
+        .btn-outline {
+
+            border: 1px solid var(--border);
+
+            background: white;
+
+        }
+
+        .btn-outline:hover {
+
+            background: #111;
+
+            color: white;
+
+        }
+
+        /* ========================================================= */
+        /* RESPONSIVE FOUNDATION */
+        /* ========================================================= */
+
+        @media (max-width:1200px) {
+
+            .grid-4 {
+
+                grid-template-columns: repeat(2,1fr);
+
+            }
+
+            .grid-3 {
+
+                grid-template-columns: repeat(2,1fr);
+
+            }
+
+            .grid-2 {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .section-title {
+
+                font-size: 3rem;
+
+            }
+
+        }
+
+        @media (max-width:768px) {
+
+            section {
+
+                padding: 80px 0;
+
+            }
+
+            .grid-4,
+            .grid-3 {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .container {
+
+                width: min(94%, var(--max-width));
+
+            }
+
+            .section-title {
+
+                font-size: 2.2rem;
+
+            }
+
+            .section-description {
+
+                font-size: 1rem;
+
+            }
+
+            .btn {
+
+                width: 100%;
+
+                justify-content: center;
+
+            }
+
+        }
+
+        /* ========================================================= */
+        /* HEADER, HERO AND REMAINING STYLES */
+        /* CONTINUE IN PART 1B */
+        /* ========================================================= */
+
+    </style>
+
+    <link
+        rel="stylesheet"
+        href="https://buildfeatures.github.io/buildfeatures/components/community.css">
+
+</head>
+
+<body data-feature-slug="intent-memory-engine">
+  <!-- ========================================================= -->
+<!-- PART 1B -->
+<!-- HEADER + HERO -->
+<!-- ========================================================= -->
+
+<!-- ========================================================= -->
+<!-- HEADER -->
+<!-- ========================================================= -->
+
+<header class="header">
+
+    <div class="container navbar">
+
+        <a
+            href="#"
+            class="logo">
+
+            <div class="logo-icon">
+
+                BF
+
+            </div>
+
+            <span>
+
+                BuildFeatures
+
+            </span>
+
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="#overview">
+
+                Overview
+
+            </a>
+
+            <a href="#workflow">
+
+                Workflow
+
+            </a>
+
+            <a href="#technology">
+
+                Technology
+
+            </a>
+
+            <a href="#roadmap">
+
+                Roadmap
+
+            </a>
+
+            <a href="#comparison">
+
+                Comparison
+
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<!-- ========================================================= -->
+<!-- HERO -->
+<!-- ========================================================= -->
+
+<section class="hero">
+
+    <div class="container hero-grid">
+
+        <!-- LEFT -->
+
+        <div>
+
+            <div class="hero-badge">
+
+                🧠 AI-Powered Software Feature
+
+            </div>
+
+            <h1 class="hero-title">
+
+                Intent Memory Engine
+
+                <br>
+
+                (IME)
+
+            </h1>
+
+            <p class="hero-description">
+
+                Intent Memory Engine is an AI-driven software feature that remembers
+                what users are trying to accomplish instead of simply storing
+                browsing history or recent actions.
+
+                It continuously understands user goals, preserves long-term
+                context, and proactively helps users resume unfinished work,
+                complete tasks faster, and receive intelligent recommendations.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#overview"
+                    class="btn btn-primary">
+
+                    Read Documentation
+
+                </a>
+
+                <a
+                    href="#workflow"
+                    class="btn btn-outline">
+
+                    Explore Workflow
+
+                </a>
+
+            </div>
+
+            <div class="hero-stats">
+
+                <div class="stat-card">
+
+                    <div class="stat-number">
+
+                        10
+
+                    </div>
+
+                    <div class="stat-label">
+
+                        Core Sections
+
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="stat-number">
+
+                        ⭐⭐⭐⭐⭐
+
+                    </div>
+
+                    <div class="stat-label">
+
+                        Innovation
+
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="stat-number">
+
+                        AI
+
+                    </div>
+
+                    <div class="stat-label">
+
+                        Category
+
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="stat-number">
+
+                        High
+
+                    </div>
+
+                    <div class="stat-label">
+
+                        Business Value
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="hero-preview">
+
+            <div class="preview-card">
+
+                <div class="preview-header">
+
+                    <div class="preview-title">
+
+                        Active Intent
+
+                    </div>
+
+                    <div>
+
+                        Tracking
+
+                    </div>
+
+                </div>
+
+                <div class="score-circle">
+
+                    AI
+
+                </div>
+
+                <div class="score-list">
+
+                    <div class="score-item">
+
+                        <span>
+
+                            Building E-Commerce Website
+
+                        </span>
+
+                        <span class="score-value">
+
+                            Active
+
+                        </span>
+
+                    </div>
+
+                    <div class="score-item">
+
+                        <span>
+
+                            Current Progress
+
+                        </span>
+
+                        <span class="score-value">
+
+                            68%
+
+                        </span>
+
+                    </div>
+
+                    <div class="score-item">
+
+                        <span>
+
+                            Next Recommended Step
+
+                        </span>
+
+                        <span class="score-value">
+
+                            Payment API
+
+                        </span>
+
+                    </div>
+
+                    <div class="score-item">
+
+                        <span>
+
+                            Last Activity
+
+                        </span>
+
+                        <span class="score-value">
+
+                            2 hrs ago
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- CONTINUES IN PART 1C -->
+<!-- ========================================================= -->
+  <!-- ========================================================= -->
+<!-- PART 1C -->
+<!-- FEATURE OVERVIEW -->
+<!-- WHERE CAN YOU USE IT? -->
+<!-- BENEFITS -->
+<!-- TECHNOLOGY -->
+<!-- ========================================================= -->
+
+<!-- ========================================================= -->
+<!-- FEATURE OVERVIEW -->
+<!-- ========================================================= -->
+
+<section id="overview">
+
+    <div class="container">
+
+        <div class="section-tag">
+
+            📖
+
+            Feature Overview
+
+        </div>
+
+        <h2 class="section-title">
+
+            What is Intent Memory Engine?
+
+        </h2>
+
+        <p class="section-description">
+
+            Intent Memory Engine (IME) is an AI-powered software feature that
+            remembers user goals instead of simply storing browsing history,
+            searches, or recently visited pages.
+
+            It continuously understands what users are trying to accomplish,
+            tracks their progress across sessions and devices, and proactively
+            recommends the next best action to help complete long-term tasks
+            without losing context.
+
+        </p>
+
+        <br><br>
+
+        <div class="grid-2">
+
+            <div class="card">
+
+                <h3>
+
+                    Why It Exists
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Traditional applications remember where users have been.
+                    Intent Memory Engine remembers where users want to go.
+                    Instead of restoring history, it restores purpose,
+                    helping users continue unfinished work and receive
+                    intelligent guidance automatically.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Problems It Solves
+
+                </h3>
+
+                <br>
+
+                <ul>
+
+                    <li>✔ Users forget unfinished tasks</li>
+
+                    <li>✔ Long-term projects lose context</li>
+
+                    <li>✔ AI assistants restart conversations</li>
+
+                    <li>✔ Productivity decreases after interruptions</li>
+
+                    <li>✔ Applications cannot understand user goals</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- WHERE CAN YOU USE IT? -->
+<!-- ========================================================= -->
+
+<section id="use-cases">
+
+    <div class="container">
+
+        <div class="section-tag">
+
+            🌍
+
+            Where Can You Use It?
+
+        </div>
+
+        <h2 class="section-title">
+
+            Industry Applications
+
+        </h2>
+
+        <p class="section-description">
+
+            Intent Memory Engine can be integrated into any software
+            where understanding long-term user goals improves productivity,
+            personalization, and intelligent automation.
+
+        </p>
+
+        <br><br>
+
+        <div class="card">
+
+            <div style="overflow-x:auto;">
+
+                <table style="width:100%;border-collapse:collapse;">
+
+                    <thead>
+
+                        <tr>
+
+                            <th style="padding:18px;text-align:left;border-bottom:1px solid #e8e8e8;">
+
+                                Industry
+
+                            </th>
+
+                            <th style="padding:18px;text-align:left;border-bottom:1px solid #e8e8e8;">
+
+                                Primary Use
+
+                            </th>
+
+                            <th style="padding:18px;text-align:left;border-bottom:1px solid #e8e8e8;">
+
+                                Business Value
+
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td style="padding:18px;">🤖 AI Assistants</td>
+
+                            <td style="padding:18px;">Remember user goals</td>
+
+                            <td style="padding:18px;">Better AI experiences</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td style="padding:18px;">📚 Learning Platforms</td>
+
+                            <td style="padding:18px;">Resume learning paths</td>
+
+                            <td style="padding:18px;">Higher completion rates</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td style="padding:18px;">💼 Project Management</td>
+
+                            <td style="padding:18px;">Track project intent</td>
+
+                            <td style="padding:18px;">Improved productivity</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td style="padding:18px;">🛒 E-Commerce</td>
+
+                            <td style="padding:18px;">Shopping goals</td>
+
+                            <td style="padding:18px;">Higher conversions</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td style="padding:18px;">🏦 Banking</td>
+
+                            <td style="padding:18px;">Financial planning</td>
+
+                            <td style="padding:18px;">Personalized guidance</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td style="padding:18px;">☁ SaaS</td>
+
+                            <td style="padding:18px;">Workflow continuation</td>
+
+                            <td style="padding:18px;">Better user retention</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- BENEFITS & LIMITATIONS -->
+<!-- ========================================================= -->
+
+<section id="benefits">
+
+    <div class="container">
+
+        <div class="section-tag">
+
+            ✅
+
+            Benefits & Limitations
+
+        </div>
+
+        <h2 class="section-title">
+
+            Strengths and Trade-Offs
+
+        </h2>
+
+        <p class="section-description">
+
+            Intent Memory Engine provides proactive AI assistance but also
+            requires thoughtful planning for privacy, context management,
+            and data retention.
+
+        </p>
+
+        <br><br>
+
+        <div class="grid-2">
+
+            <div class="card">
+
+                <h3>✅ Benefits</h3>
+
+                <br>
+
+                <ul>
+
+                    <li>✔ Remembers long-term goals</li>
+                    <li>✔ Reduces repeated work</li>
+                    <li>✔ Improves AI personalization</li>
+                    <li>✔ Continues interrupted workflows</li>
+                    <li>✔ Increases productivity</li>
+                    <li>✔ Smarter recommendations</li>
+                    <li>✔ Better user experience</li>
+                    <li>✔ Cross-device continuity</li>
+
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h3>⚠ Limitations</h3>
+
+                <br>
+
+                <ul>
+
+                    <li>⚠ Requires AI understanding</li>
+                    <li>⚠ Privacy controls are essential</li>
+                    <li>⚠ Memory quality affects results</li>
+                    <li>⚠ Needs continuous updates</li>
+                    <li>⚠ More storage requirements</li>
+                    <li>⚠ Context may become outdated</li>
+                    <li>⚠ Requires user consent</li>
+                    <li>⚠ Complex implementation</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- TECHNOLOGY REQUIREMENTS -->
+<!-- ========================================================= -->
+
+<section id="technology">
+
+    <div class="container">
+
+        <div class="section-tag">
+
+            🛠
+
+            Technology Requirements
+
+        </div>
+
+        <h2 class="section-title">
+
+            Components Typically Required
+
+        </h2>
+
+        <p class="section-description">
+
+            Intent Memory Engine combines AI, persistent memory,
+            context management, analytics, and recommendation systems
+            to continuously understand user intentions.
+
+        </p>
+
+        <br><br>
+
+        <div class="grid-3">
+
+            <div class="card">
+
+                <h3>🧠 AI Intent Detection</h3>
+
+                <br>
+
+                <p>
+
+                    Understands user goals from actions,
+                    conversations, and workflows.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>💾 Goal Memory</h3>
+
+                <br>
+
+                <p>
+
+                    Stores long-term objectives and
+                    progress across sessions.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>📊 Context Engine</h3>
+
+                <br>
+
+                <p>
+
+                    Maintains relationships between
+                    projects, activities, and objectives.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>⚙ Recommendation Engine</h3>
+
+                <br>
+
+                <p>
+
+                    Suggests the next best action
+                    automatically.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>🔐 Privacy Controls</h3>
+
+                <br>
+
+                <p>
+
+                    Allows users to review,
+                    edit, or delete stored intent.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>📈 Analytics</h3>
+
+                <br>
+
+                <p>
+
+                    Measures intent completion,
+                    engagement, and productivity improvements.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- CONTINUES IN PART 2A -->
+<!-- ========================================================= -->
