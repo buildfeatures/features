@@ -1,0 +1,4048 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ========================================================= -->
+    <!-- BUILDFEATURES -->
+    <!-- Production Ready Documentation Page -->
+    <!-- PART 1A -->
+    <!-- HTML HEAD + GLOBAL FOUNDATION -->
+    <!-- ========================================================= -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge">
+
+    <!-- ========================================================= -->
+    <!-- SEO -->
+    <!-- ========================================================= -->
+
+    <title>
+
+        Authentication Journey Engine (AJE) | BuildFeatures
+
+    </title>
+
+    <meta
+        name="description"
+        content="Production-ready documentation for Authentication Journey Engine (AJE). Learn how intelligent authentication journeys dynamically adapt login experiences using contextual signals, risk evaluation, trust analysis, authentication orchestration, continuous verification, and enterprise security policies.">
+
+    <meta
+        name="keywords"
+        content="Authentication Journey Engine, AJE, Authentication Architecture, Dynamic Authentication, Login Journey, Identity Journey, Adaptive Authentication, Enterprise Authentication, Authentication Workflow, BuildFeatures">
+
+    <meta
+        name="author"
+        content="BuildFeatures">
+
+    <!-- ========================================================= -->
+    <!-- GOOGLE FONT -->
+    <!-- ========================================================= -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- ========================================================= -->
+    <!-- CSS -->
+    <!-- ========================================================= -->
+
+    <link
+        rel="stylesheet"
+        href="https://buildfeatures.github.io/buildfeatures/components/community.css">
+
+    <link
+        rel="stylesheet"
+        href="https://buildfeatures.github.io/features/feature.css">
+
+</head>
+
+<body data-feature-slug="authentication-journey-engine">
+
+    <!-- ========================================================= -->
+    <!-- HEADER -->
+    <!-- ========================================================= -->
+
+    <header class="header">
+
+        <div class="container navbar">
+
+            <a
+                href="#"
+                class="logo">
+
+                <div class="logo-icon">
+
+                    BF
+
+                </div>
+
+                <span>
+
+                    BuildFeatures
+
+                </span>
+
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="#overview">
+
+                    Overview
+
+                </a>
+
+                <a href="#workflow">
+
+                    Workflow
+
+                </a>
+
+                <a href="#architecture">
+
+                    Architecture
+
+                </a>
+
+                <a href="#roadmap">
+
+                    Roadmap
+
+                </a>
+
+                <a href="#comparison">
+
+                    Comparison
+
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- ========================================================= -->
+    <!-- HERO -->
+    <!-- ========================================================= -->
+
+    <section class="hero">
+
+        <div class="container hero-grid">
+
+            <!-- ================================================= -->
+            <!-- LEFT -->
+            <!-- ================================================= -->
+
+            <div>
+
+                <div class="hero-badge">
+
+                    🔐 Next-Generation Authentication Architecture
+
+                </div>
+
+                <h1 class="hero-title">
+
+                    Authentication
+
+                    <br>
+
+                    Journey Engine
+
+                </h1>
+
+                <p class="hero-description">
+
+                    Authentication Journey Engine (AJE) is a production-ready
+                    authentication architecture that dynamically generates the
+                    optimal authentication journey for every login request
+                    instead of forcing every user through the same static
+                    authentication flow.
+
+                    Rather than relying on fixed sequences such as Password,
+                    OTP, and Login, AJE continuously evaluates user identity,
+                    device trust, behavioral patterns, location, risk level,
+                    requested resource, business policies, and environmental
+                    context to intelligently build the safest authentication
+                    journey in real time.
+
+                    This architecture improves user experience for trusted
+                    users while strengthening enterprise security for
+                    high-risk scenarios through adaptive authentication
+                    orchestration, continuous verification, and centralized
+                    journey management.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#overview"
+                        class="btn btn-primary">
+
+                        Read Documentation
+
+                    </a>
+
+                    <a
+                        href="#workflow"
+                        class="btn btn-outline">
+
+                        Explore Workflow
+
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div class="stat-card">
+
+                        <div class="stat-number">
+
+                            10
+
+                        </div>
+
+                        <div class="stat-label">
+
+                            Core Sections
+
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-number">
+
+                            ★★★★★
+
+                        </div>
+
+                        <div class="stat-label">
+
+                            Innovation
+
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-number">
+
+                            Authentication
+
+                        </div>
+
+                        <div class="stat-label">
+
+                            Category
+
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-number">
+
+                            Enterprise
+
+                        </div>
+
+                        <div class="stat-label">
+
+                            Ready
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ================================================= -->
+            <!-- RIGHT -->
+            <!-- ================================================= -->
+
+            <div class="hero-preview">
+
+                <div class="preview-card">
+
+                    <div class="preview-header">
+
+                        <div class="preview-title">
+
+                            Journey Execution
+
+                        </div>
+
+                        <div>
+
+                            Running
+
+                        </div>
+
+                    </div>
+
+                    <div class="score-circle">
+
+                        AJE
+
+                    </div>
+
+                    <div class="score-list">
+
+                        <div class="score-item">
+
+                            <span>
+
+                                Risk Level
+
+                            </span>
+
+                            <span class="score-value">
+
+                                Medium
+
+                            </span>
+
+                        </div>
+
+                        <div class="score-item">
+
+                            <span>
+
+                                Journey
+
+                            </span>
+
+                            <span class="score-value">
+
+                                Generated
+
+                            </span>
+
+                        </div>
+
+                        <div class="score-item">
+
+                            <span>
+
+                                Steps
+
+                            </span>
+
+                            <span class="score-value">
+
+                                3 Selected
+
+                            </span>
+
+                        </div>
+
+                        <div class="score-item">
+
+                            <span>
+
+                                Result
+
+                            </span>
+
+                            <span class="score-value">
+
+                                Authenticated
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- FEATURE OVERVIEW -->
+    <!-- CONTINUES IN PART 1B -->
+    <!-- ========================================================= -->
+  <!-- ========================================================= -->
+<!-- PART 1B -->
+<!-- FEATURE OVERVIEW -->
+<!-- WHY AUTHENTICATION JOURNEY ENGINE? -->
+<!-- INDUSTRY APPLICATIONS -->
+<!-- ========================================================= -->
+
+<!-- ========================================================= -->
+<!-- FEATURE OVERVIEW -->
+<!-- ========================================================= -->
+
+<section id="overview">
+
+    <div class="container">
+
+        <div class="section-tag">
+
+            📖
+
+            Feature Overview
+
+        </div>
+
+        <h2 class="section-title">
+
+            What is Authentication Journey Engine?
+
+        </h2>
+
+        <p class="section-description">
+
+            Authentication Journey Engine (AJE) is a production-ready
+            authentication architecture that dynamically creates the
+            most appropriate authentication journey for every user,
+            every device, and every request.
+
+            Instead of forcing every user through the same authentication
+            sequence, AJE evaluates identity confidence, device trust,
+            location, behavioral patterns, requested resource, business
+            policies, historical activity, and real-time risk signals to
+            determine the safest authentication path.
+
+            Every login journey is generated dynamically, allowing
+            trusted users to authenticate quickly while automatically
+            increasing verification requirements whenever risk rises.
+            This enables organizations to improve security without
+            sacrificing user experience.
+
+        </p>
+
+        <br><br>
+
+        <div class="grid-2">
+
+            <div class="card">
+
+                <h3>
+
+                    Why It Exists
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Traditional authentication systems follow a fixed
+                    sequence such as Password → OTP → Login regardless
+                    of who the user is or the context of the request.
+                    This creates unnecessary friction for trusted users
+                    while still failing to adequately protect against
+                    sophisticated attacks.
+
+                </p>
+
+                <br>
+
+                <p>
+
+                    Authentication Journey Engine replaces static login
+                    flows with intelligent journey generation. Every
+                    authentication request is evaluated independently,
+                    allowing the platform to decide which verification
+                    methods should be required, skipped, reordered, or
+                    introduced based on real-time trust and business
+                    policies.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Problems It Solves
+
+                </h3>
+
+                <br>
+
+                <ul>
+
+                    <li>✔ Eliminates one-size-fits-all login flows</li>
+
+                    <li>✔ Reduces unnecessary MFA challenges</li>
+
+                    <li>✔ Improves user experience for trusted users</li>
+
+                    <li>✔ Dynamically adapts to changing risk levels</li>
+
+                    <li>✔ Prevents authentication policy bypass</li>
+
+                    <li>✔ Supports continuous authentication</li>
+
+                    <li>✔ Centralizes authentication decision making</li>
+
+                    <li>✔ Enables enterprise-wide authentication consistency</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- INDUSTRY APPLICATIONS -->
+<!-- ========================================================= -->
+
+<section id="use-cases">
+
+    <div class="container">
+
+        <div class="section-tag">
+
+            🌍
+
+            Industry Applications
+
+        </div>
+
+        <h2 class="section-title">
+
+            Where Can Authentication Journey Engine Be Used?
+
+        </h2>
+
+        <p class="section-description">
+
+            Authentication Journey Engine is suitable for any enterprise
+            application where authentication requirements vary according
+            to identity confidence, transaction sensitivity, regulatory
+            compliance, device trust, or business risk. Instead of
+            maintaining multiple authentication rules across applications,
+            organizations can centralize journey generation through one
+            intelligent authentication platform.
+
+        </p>
+
+        <br><br>
+
+        <div class="card">
+
+            <div class="table-responsive">
+
+                <table style="width:100%;border-collapse:collapse;">
+
+                    <thead>
+
+                        <tr>
+
+                            <th style="padding:18px;text-align:left;border-bottom:1px solid #e8e8e8;">
+
+                                Industry
+
+                            </th>
+
+                            <th style="padding:18px;text-align:left;border-bottom:1px solid #e8e8e8;">
+
+                                Authentication Scenario
+
+                            </th>
+
+                            <th style="padding:18px;text-align:left;border-bottom:1px solid #e8e8e8;">
+
+                                Generated Journey
+
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td style="padding:18px;">
+
+                                🏦 Banking
+
+                            </td>
+
+                            <td style="padding:18px;">
+
+                                Customer Login
+
+                            </td>
+
+                            <td style="padding:18px;">
+
+                                Password, Face ID, Risk Evaluation,
+                                Transaction Approval
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td style="padding:18px;">
+
+                                🛒 E-Commerce
+
+                            </td>
+
+                            <td style="padding:18px;">
+
+                                Checkout Verification
+
+                            </td>
+
+                            <td style="padding:18px;">
+
+                                Device Trust,
+                                OTP,
+                                Payment Confirmation
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td style="padding:18px;">
+
+                                🏥 Healthcare
+
+                            </td>
+
+                            <td style="padding:18px;">
+
+                                Doctor Portal Access
+
+                            </td>
+
+                            <td style="padding:18px;">
+
+                                Smart Card,
+                                Biometric,
+                                Continuous Verification
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td style="padding:18px;">
+
+                                🏢 Enterprise
+
+                            </td>
+
+                            <td style="padding:18px;">
+
+                                Employee Login
+
+                            </td>
+
+                            <td style="padding:18px;">
+
+                                Device Trust,
+                                Passkey,
+                                Behavioral Analysis
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td style="padding:18px;">
+
+                                ☁ SaaS Platforms
+
+                            </td>
+
+                            <td style="padding:18px;">
+
+                                Administrator Access
+
+                            </td>
+
+                            <td style="padding:18px;">
+
+                                Password,
+                                Passkey,
+                                Hardware Key,
+                                Manager Approval
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td style="padding:18px;">
+
+                                🛡 Government
+
+                            </td>
+
+                            <td style="padding:18px;">
+
+                                Citizen Portal
+
+                            </td>
+
+                            <td style="padding:18px;">
+
+                                Identity Verification,
+                                OTP,
+                                Face Match,
+                                Digital Signature
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- CONTINUES IN PART 1C -->
+<!-- ========================================================= -->
+  <!-- ========================================================= -->
+<!-- PART 1C -->
+<!-- BENEFITS & LIMITATIONS -->
+<!-- CORE TECHNOLOGY COMPONENTS -->
+<!-- ========================================================= -->
+
+<!-- ========================================================= -->
+<!-- BENEFITS & LIMITATIONS -->
+<!-- ========================================================= -->
+
+<section id="benefits">
+
+    <div class="container">
+
+        <div class="section-tag">
+
+            ✅
+
+            Benefits & Limitations
+
+        </div>
+
+        <h2 class="section-title">
+
+            Strengths and Implementation Challenges
+
+        </h2>
+
+        <p class="section-description">
+
+            Authentication Journey Engine replaces static authentication
+            workflows with intelligent journey generation. Instead of
+            hardcoding login sequences, authentication decisions become
+            context-aware, policy-driven, and continuously adaptive.
+
+            By evaluating identity confidence, trust signals, business
+            policies, and environmental context before every authentication
+            step, organizations improve both security and user experience.
+            However, implementing dynamic authentication journeys requires
+            careful policy governance, journey orchestration, observability,
+            and trust evaluation.
+
+        </p>
+
+        <br><br>
+
+        <div class="grid-2">
+
+            <div class="card">
+
+                <h3>
+
+                    ✅ Major Benefits
+
+                </h3>
+
+                <br>
+
+                <ul>
+
+                    <li>✔ Eliminates fixed authentication workflows</li>
+
+                    <li>✔ Generates personalized login journeys</li>
+
+                    <li>✔ Reduces unnecessary authentication steps</li>
+
+                    <li>✔ Improves experience for trusted users</li>
+
+                    <li>✔ Automatically escalates high-risk logins</li>
+
+                    <li>✔ Centralizes authentication policies</li>
+
+                    <li>✔ Supports continuous authentication</li>
+
+                    <li>✔ Adapts to changing business requirements</li>
+
+                    <li>✔ Strengthens Zero Trust implementation</li>
+
+                    <li>✔ Improves enterprise security consistency</li>
+
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    ⚠ Implementation Challenges
+
+                </h3>
+
+                <br>
+
+                <ul>
+
+                    <li>⚠ Requires accurate trust evaluation models</li>
+
+                    <li>⚠ Journey policies must be carefully designed</li>
+
+                    <li>⚠ Risk scoring requires continuous tuning</li>
+
+                    <li>⚠ Authentication methods require orchestration</li>
+
+                    <li>⚠ Continuous verification increases complexity</li>
+
+                    <li>⚠ Regulatory requirements vary by industry</li>
+
+                    <li>⚠ Requires complete auditability</li>
+
+                    <li>⚠ Journey testing becomes more complex</li>
+
+                    <li>⚠ Multiple identity providers must integrate correctly</li>
+
+                    <li>⚠ Monitoring is critical for production deployments</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- CORE TECHNOLOGY COMPONENTS -->
+<!-- ========================================================= -->
+
+<section id="technology">
+
+    <div class="container">
+
+        <div class="section-tag">
+
+            🛠
+
+            Core Technology Components
+
+        </div>
+
+        <h2 class="section-title">
+
+            Building Blocks of Authentication Journey Engine
+
+        </h2>
+
+        <p class="section-description">
+
+            Authentication Journey Engine is more than an MFA solution.
+            It consists of multiple intelligent platform components that
+            evaluate context, calculate trust, generate authentication
+            journeys, orchestrate verification methods, enforce business
+            policies, and continuously monitor authenticated sessions.
+
+        </p>
+
+        <br><br>
+
+        <div class="grid-3">
+
+            <div class="card">
+
+                <h3>
+
+                    🎯 Journey Engine
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Receives authentication requests, evaluates available
+                    context, and dynamically generates the authentication
+                    journey required for that specific login.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    🔐 Trust Engine
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Calculates identity confidence using device trust,
+                    historical behavior, network reputation, location,
+                    biometrics, and environmental signals.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    📊 Risk Engine
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Continuously evaluates authentication risk using
+                    behavioral analytics, anomalies, fraud intelligence,
+                    and enterprise security policies.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    ⚙ Journey Orchestrator
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Determines which authentication methods should execute,
+                    their order, retry logic, fallback mechanisms, and
+                    completion requirements.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    📚 Policy Engine
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Applies authentication policies, compliance rules,
+                    business requirements, and authorization constraints
+                    before allowing users to proceed.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    👁 Session Monitor
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Continuously evaluates authenticated sessions and
+                    automatically requests additional verification whenever
+                    trust decreases during user activity.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <div class="grid-2">
+
+            <div class="card">
+
+                <h3>
+
+                    Supporting Infrastructure
+
+                </h3>
+
+                <br>
+
+                <ul>
+
+                    <li>✔ Identity Provider</li>
+
+                    <li>✔ Device Intelligence</li>
+
+                    <li>✔ Passkey Services</li>
+
+                    <li>✔ OTP Providers</li>
+
+                    <li>✔ Biometric Services</li>
+
+                    <li>✔ Audit Logging</li>
+
+                    <li>✔ Monitoring Platform</li>
+
+                    <li>✔ Threat Intelligence</li>
+
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Authentication Methods
+
+                </h3>
+
+                <br>
+
+                <ul>
+
+                    <li>✔ Password</li>
+
+                    <li>✔ Passkeys</li>
+
+                    <li>✔ Face Recognition</li>
+
+                    <li>✔ Fingerprint</li>
+
+                    <li>✔ Hardware Security Keys</li>
+
+                    <li>✔ OTP Verification</li>
+
+                    <li>✔ Digital Certificates</li>
+
+                    <li>✔ Continuous Authentication</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- CONTINUES IN PART 2A -->
+<!-- HOW IT WORKS -->
+<!-- ========================================================= -->
+  <!-- ========================================================= -->
+<!-- PART 2A -->
+<!-- HOW IT WORKS -->
+<!-- REAL-WORLD EXAMPLES -->
+<!-- AUTHENTICATION JOURNEY LIFECYCLE -->
+<!-- ========================================================= -->
+
+<!-- ========================================================= -->
+<!-- HOW IT WORKS -->
+<!-- ========================================================= -->
+
+<section id="workflow">
+
+    <div class="container">
+
+        <div class="section-tag">
+
+            ⚙️
+
+            How It Works
+
+        </div>
+
+        <h2 class="section-title">
+
+            How Authentication Journey Engine Works
+
+        </h2>
+
+        <p class="section-description">
+
+            Authentication Journey Engine transforms traditional authentication
+            by dynamically generating a unique authentication journey for every
+            login request instead of executing one predefined authentication
+            sequence.
+
+            Every authentication request begins with contextual analysis rather
+            than immediately asking for credentials. The platform evaluates
+            user identity, device reputation, location, historical behavior,
+            business policies, requested resource, transaction sensitivity,
+            and real-time threat intelligence before deciding how the user
+            should authenticate.
+
+            The generated journey may contain one authentication step for
+            trusted users or multiple verification layers for higher-risk
+            scenarios. Throughout the authenticated session, trust continues
+            to be evaluated, allowing the platform to request additional
+            verification whenever circumstances change.
+
+        </p>
+
+        <br><br>
+
+        <div class="card">
+
+<pre style="font-family:inherit;line-height:2;color:#555;white-space:pre-wrap;">
+
+User Requests Login
+
+↓
+
+Collect Context
+
+↓
+
+Identity Analysis
+
+↓
+
+Trust Evaluation
+
+↓
+
+Risk Assessment
+
+↓
+
+Generate Authentication Journey
+
+↓
+
+Execute Authentication Steps
+
+↓
+
+Authentication Successful
+
+↓
+
+Continuous Session Monitoring
+
+</pre>
+
+        </div>
+
+        <br><br>
+
+        <div class="grid-2">
+
+            <div class="card">
+
+                <h3>
+
+                    Workflow Explanation
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Every authentication request begins by collecting
+                    contextual information rather than immediately asking
+                    the user for credentials. Device trust, browser
+                    fingerprint, location, network reputation, historical
+                    activity, business policies, and user behavior are
+                    evaluated before any authentication decision is made.
+
+                </p>
+
+                <br>
+
+                <p>
+
+                    The Journey Engine calculates identity confidence and
+                    determines the safest authentication sequence. Trusted
+                    users may complete authentication with only a passkey
+                    or biometric verification, while higher-risk requests
+                    automatically receive additional authentication steps.
+
+                </p>
+
+                <br>
+
+                <p>
+
+                    Unlike traditional authentication systems, every login
+                    follows its own dynamically generated journey. The
+                    authentication path is created specifically for that
+                    request instead of using predefined login workflows.
+
+                </p>
+
+                <br>
+
+                <p>
+
+                    After authentication completes, the Session Monitor
+                    continuously evaluates trust throughout the session.
+                    If trust decreases due to suspicious activity, new
+                    authentication steps can be generated without requiring
+                    users to start the login process again.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Banking Login Example
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    A customer attempts to log into a banking application
+                    from a trusted mobile device.
+
+                </p>
+
+                <br>
+
+<pre style="font-family:inherit;line-height:1.8;color:#555;white-space:pre-wrap;">
+
+POST /api/authenticate
+
+{
+
+    "username":"john.doe",
+
+    "deviceId":"DEV-21948"
+
+}
+
+</pre>
+
+                <br>
+
+                <p>
+
+                    Authentication Journey Engine automatically creates
+                    the appropriate authentication journey.
+
+                </p>
+
+                <br>
+
+                <ul>
+
+                    <li>✔ Verify Device Trust</li>
+
+                    <li>✔ Analyze Login Behavior</li>
+
+                    <li>✔ Calculate Trust Score</li>
+
+                    <li>✔ Evaluate Risk</li>
+
+                    <li>✔ Request Face Recognition</li>
+
+                    <li>✔ Generate Session</li>
+
+                    <li>✔ Start Continuous Monitoring</li>
+
+                </ul>
+
+                <br>
+
+                <p>
+
+                    If the same customer later attempts to transfer a
+                    large amount of money or logs in from an unfamiliar
+                    location, Authentication Journey Engine immediately
+                    generates a stronger authentication journey without
+                    changing the application.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <div class="section-tag">
+
+            🔄
+
+            Authentication Journey Lifecycle
+
+        </div>
+
+        <h2 class="section-title">
+
+            Lifecycle of an Authentication Journey
+
+        </h2>
+
+        <p class="section-description">
+
+            Every authentication request follows a standardized lifecycle.
+            While the authentication steps vary depending on trust and risk,
+            the journey generation process remains consistent across all
+            enterprise applications.
+
+        </p>
+
+        <br><br>
+
+        <div class="card">
+
+<pre style="font-family:inherit;line-height:2;color:#555;white-space:pre-wrap;">
+
+Authentication Request
+
+↓
+
+Collect Context
+
+↓
+
+Identify User
+
+↓
+
+Evaluate Trust
+
+↓
+
+Calculate Risk
+
+↓
+
+Generate Journey
+
+↓
+
+Execute Authentication
+
+↓
+
+Grant Access
+
+↓
+
+Monitor Session
+
+↓
+
+Risk Changes?
+
+↓
+
+Generate Additional Journey
+
+</pre>
+
+        </div>
+
+        <br><br>
+
+        <div class="grid-3">
+
+            <div class="card">
+
+                <h3>
+
+                    🎯 Context Analysis
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Collects identity, device, behavioral, environmental,
+                    and business information before generating an
+                    authentication journey.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    ⚙ Journey Generation
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Creates the optimal authentication sequence by
+                    selecting appropriate verification methods according
+                    to trust, risk, compliance, and enterprise policies.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    🔒 Continuous Verification
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Authentication does not end after login. The platform
+                    continuously evaluates trust and dynamically generates
+                    additional authentication journeys whenever risk
+                    increases during an active session.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- CONTINUES IN PART 2B -->
+<!-- ========================================================= -->
+  <!-- ========================================================= -->
+<!-- PART 2B -->
+<!-- SYSTEM ARCHITECTURE -->
+<!-- PLATFORM COMPONENTS -->
+<!-- ========================================================= -->
+
+<!-- ========================================================= -->
+<!-- SYSTEM ARCHITECTURE -->
+<!-- ========================================================= -->
+
+<section id="architecture">
+
+    <div class="container">
+
+        <div class="section-tag">
+
+            🏗
+
+            System Architecture
+
+        </div>
+
+        <h2 class="section-title">
+
+            Authentication Journey Engine Architecture
+
+        </h2>
+
+        <p class="section-description">
+
+            Authentication Journey Engine acts as a centralized orchestration
+            platform between applications and authentication providers.
+            Instead of applications directly invoking authentication methods,
+            every authentication request passes through the Journey Engine,
+            where contextual analysis, trust evaluation, risk assessment,
+            policy enforcement, and journey generation occur before the user
+            completes authentication.
+
+            This architecture enables every application within an enterprise
+            to follow consistent authentication standards while allowing each
+            authentication request to receive a dynamically generated journey
+            based on real-time context.
+
+        </p>
+
+        <br><br>
+
+        <div class="card">
+
+<pre style="font-family:inherit;line-height:2;color:#555;white-space:pre-wrap;">
+
+                    Client Applications
+
+                             │
+
+      ┌──────────────┬───────────────┬──────────────┐
+
+      │              │               │              │
+
+ Mobile App      Web Portal      Admin Panel     APIs
+
+      │              │               │              │
+
+      └──────────────┴───────────────┴──────────────┘
+
+                             │
+
+               Authentication Journey Engine
+
+                             │
+
+     ┌───────────┬──────────────┬──────────────┐
+
+     │           │              │              │
+
+ Journey     Trust Engine    Risk Engine   Policy Engine
+
+ Engine
+
+     │           │              │              │
+
+     └───────────┴──────────────┴──────────────┘
+
+                             │
+
+                  Journey Orchestrator
+
+                             │
+
+      ┌───────────┬────────────┬─────────────┐
+
+      │           │            │             │
+
+ Password    Passkey      Biometrics     OTP
+
+      │           │            │             │
+
+      └───────────┴────────────┴─────────────┘
+
+                             │
+
+                  Session Monitoring Engine
+
+</pre>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- PLATFORM COMPONENTS -->
+<!-- ========================================================= -->
+
+<section id="components">
+
+    <div class="container">
+
+        <div class="section-tag">
+
+            🧩
+
+            Platform Components
+
+        </div>
+
+        <h2 class="section-title">
+
+            Core Components Inside Authentication Journey Engine
+
+        </h2>
+
+        <p class="section-description">
+
+            Authentication Journey Engine is composed of several independent
+            services working together to analyze every authentication request,
+            generate the optimal authentication journey, execute verification
+            methods, and continuously monitor authenticated sessions.
+
+        </p>
+
+        <br><br>
+
+        <div class="grid-3">
+
+            <div class="card">
+
+                <h3>
+
+                    🎯 Journey Engine
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Coordinates every authentication request and builds
+                    personalized authentication journeys based on user,
+                    application, and business context.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    🔐 Trust Engine
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Calculates identity confidence using trusted devices,
+                    behavioral history, previous sessions, and verified
+                    authentication evidence.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    📊 Risk Engine
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Evaluates login risk by analyzing fraud indicators,
+                    impossible travel, anomalies, malware signals,
+                    and threat intelligence.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    📚 Policy Engine
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Applies organizational authentication policies,
+                    regulatory compliance, and resource-specific rules
+                    before granting access.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    ⚙ Journey Orchestrator
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Executes authentication methods in the correct order,
+                    manages retries, fallback logic, and authentication
+                    completion.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    👁 Session Monitor
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Continuously evaluates authenticated sessions and
+                    triggers additional authentication whenever trust
+                    decreases during user activity.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <div class="grid-2">
+
+            <div class="card">
+
+                <h3>
+
+                    External Integrations
+
+                </h3>
+
+                <br>
+
+                <ul>
+
+                    <li>✔ Identity Providers</li>
+
+                    <li>✔ Active Directory / LDAP</li>
+
+                    <li>✔ OAuth Providers</li>
+
+                    <li>✔ OpenID Connect</li>
+
+                    <li>✔ Passkey Services</li>
+
+                    <li>✔ SMS / Email OTP</li>
+
+                    <li>✔ Biometric Platforms</li>
+
+                    <li>✔ Threat Intelligence APIs</li>
+
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Supported Authentication Methods
+
+                </h3>
+
+                <br>
+
+                <ul>
+
+                    <li>✔ Username & Password</li>
+
+                    <li>✔ Passkeys (WebAuthn)</li>
+
+                    <li>✔ Face Recognition</li>
+
+                    <li>✔ Fingerprint</li>
+
+                    <li>✔ Security Keys (FIDO2)</li>
+
+                    <li>✔ OTP Verification</li>
+
+                    <li>✔ Digital Certificates</li>
+
+                    <li>✔ Continuous Authentication</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <div class="card">
+
+            <h3>
+
+                Architecture Principles
+
+            </h3>
+
+            <br>
+
+            <ul>
+
+                <li>✔ Centralized authentication orchestration</li>
+
+                <li>✔ Context-aware decision making</li>
+
+                <li>✔ Dynamic journey generation</li>
+
+                <li>✔ Zero Trust security model</li>
+
+                <li>✔ Policy-driven authentication</li>
+
+                <li>✔ Continuous trust evaluation</li>
+
+                <li>✔ Vendor-independent integrations</li>
+
+                <li>✔ Enterprise scalability</li>
+
+                <li>✔ High availability deployment</li>
+
+                <li>✔ Complete auditability</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- CONTINUES IN PART 2C -->
+<!-- API DESIGN -->
+<!-- DATABASE DESIGN -->
+<!-- ========================================================= -->
+  <!-- ========================================================= -->
+<!-- PART 2C -->
+<!-- API DESIGN -->
+<!-- DATABASE DESIGN -->
+<!-- ========================================================= -->
+
+<!-- ========================================================= -->
+<!-- API DESIGN -->
+<!-- ========================================================= -->
+
+<section id="api-design">
+
+    <div class="container">
+
+        <div class="section-tag">
+
+            🔌
+
+            API Design
+
+        </div>
+
+        <h2 class="section-title">
+
+            Authentication Journey Engine API Design
+
+        </h2>
+
+        <p class="section-description">
+
+            Authentication Journey Engine exposes a centralized REST API that
+            applications use instead of directly communicating with individual
+            authentication providers. Every authentication request is evaluated,
+            analyzed, and transformed into a dynamically generated authentication
+            journey before verification begins.
+
+            The API remains consistent regardless of the authentication methods
+            executed behind the scenes, allowing applications to integrate once
+            while Authentication Journey Engine manages authentication complexity,
+            policy enforcement, trust evaluation, and risk analysis internally.
+
+        </p>
+
+        <br><br>
+
+        <div class="card">
+
+<pre style="font-family:inherit;line-height:1.8;color:#555;white-space:pre-wrap;">
+
+POST   /api/v1/auth/request
+
+POST   /api/v1/auth/verify
+
+POST   /api/v1/auth/challenge
+
+POST   /api/v1/auth/session
+
+POST   /api/v1/auth/logout
+
+GET    /api/v1/journeys/{journeyId}
+
+GET    /api/v1/journeys/history
+
+GET    /api/v1/risk/evaluate
+
+GET    /api/v1/trust/score
+
+POST   /api/v1/policies/validate
+
+</pre>
+
+        </div>
+
+        <br><br>
+
+        <div class="grid-2">
+
+            <div class="card">
+
+                <h3>
+
+                    Authentication Request
+
+                </h3>
+
+                <br>
+
+<pre style="font-family:inherit;line-height:1.8;color:#555;white-space:pre-wrap;">
+
+POST /api/v1/auth/request
+
+{
+
+  "username":"john@example.com",
+
+  "deviceId":"DEVICE-12931",
+
+  "application":"Internet Banking",
+
+  "ipAddress":"192.168.10.25",
+
+  "location":"India"
+
+}
+
+</pre>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    API Response
+
+                </h3>
+
+                <br>
+
+<pre style="font-family:inherit;line-height:1.8;color:#555;white-space:pre-wrap;">
+
+{
+
+  "journeyId":"JR-100239",
+
+  "risk":"Medium",
+
+  "trustScore":84,
+
+  "nextStep":"Face Recognition",
+
+  "status":"Challenge Required"
+
+}
+
+</pre>
+
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <div class="grid-3">
+
+            <div class="card">
+
+                <h3>
+
+                    🎯 Journey APIs
+
+                </h3>
+
+                <br>
+
+                <ul>
+
+                    <li>✔ Create Journey</li>
+
+                    <li>✔ Resume Journey</li>
+
+                    <li>✔ Cancel Journey</li>
+
+                    <li>✔ Journey Status</li>
+
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    🔐 Verification APIs
+
+                </h3>
+
+                <br>
+
+                <ul>
+
+                    <li>✔ Password</li>
+
+                    <li>✔ Passkey</li>
+
+                    <li>✔ OTP</li>
+
+                    <li>✔ Biometrics</li>
+
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    📊 Intelligence APIs
+
+                </h3>
+
+                <br>
+
+                <ul>
+
+                    <li>✔ Trust Score</li>
+
+                    <li>✔ Risk Analysis</li>
+
+                    <li>✔ Policy Evaluation</li>
+
+                    <li>✔ Session Monitoring</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- DATABASE DESIGN -->
+<!-- ========================================================= -->
+
+<section id="database">
+
+    <div class="container">
+
+        <div class="section-tag">
+
+            🗄
+
+            Database Design
+
+        </div>
+
+        <h2 class="section-title">
+
+            Suggested Database Architecture
+
+        </h2>
+
+        <p class="section-description">
+
+            Authentication Journey Engine stores journey execution,
+            authentication evidence, trust evaluations, policy decisions,
+            and session information separately. Keeping authentication data
+            modular improves scalability, auditability, and future expansion
+            while allowing each authentication journey to be fully traceable.
+
+        </p>
+
+        <br><br>
+
+        <div class="card">
+
+<pre style="font-family:inherit;line-height:2;color:#555;white-space:pre-wrap;">
+
+Users
+   │
+   ├────────────┐
+   │            │
+Devices      Sessions
+   │            │
+   │            │
+Journey Requests
+   │
+Journey Steps
+   │
+Authentication Events
+   │
+Risk Evaluations
+   │
+Trust Scores
+   │
+Policy Decisions
+   │
+Audit Logs
+
+</pre>
+
+        </div>
+
+        <br><br>
+
+        <div class="grid-3">
+
+            <div class="card">
+
+                <h3>
+
+                    Users
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Stores user identity, profile information,
+                    authentication preferences, and linked credentials.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Devices
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Stores trusted devices, browser fingerprints,
+                    operating systems, hardware identifiers,
+                    and device reputation.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Sessions
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Maintains authenticated sessions, expiration,
+                    trust level, activity timestamps,
+                    and continuous verification state.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Journey Requests
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Records every authentication request,
+                    generated journey,
+                    requesting application,
+                    and current execution status.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Journey Steps
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Stores every authentication step executed,
+                    execution order,
+                    verification result,
+                    retry count,
+                    and completion status.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Risk Evaluations
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Records risk calculations,
+                    anomaly detection,
+                    fraud indicators,
+                    and security intelligence
+                    used during journey generation.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Trust Scores
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Maintains trust history,
+                    confidence levels,
+                    behavioral reputation,
+                    and trust score evolution
+                    over time.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Policy Decisions
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Stores evaluated business rules,
+                    compliance decisions,
+                    policy versions,
+                    and authorization outcomes.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Audit Logs
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Provides immutable records of every
+                    authentication decision,
+                    journey execution,
+                    administrator action,
+                    and security event.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <div class="card">
+
+            <h3>
+
+                Database Design Principles
+
+            </h3>
+
+            <br>
+
+            <ul>
+
+                <li>✔ Normalize authentication entities</li>
+
+                <li>✔ Separate journeys from sessions</li>
+
+                <li>✔ Maintain immutable audit history</li>
+
+                <li>✔ Version authentication policies</li>
+
+                <li>✔ Store every verification event</li>
+
+                <li>✔ Keep trust calculations historical</li>
+
+                <li>✔ Support horizontal scaling</li>
+
+                <li>✔ Optimize for reporting and analytics</li>
+
+                <li>✔ Ensure regulatory compliance</li>
+
+                <li>✔ Enable complete authentication traceability</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- CONTINUES IN PART 3A -->
+<!-- IMPLEMENTATION -->
+<!-- ROADMAP -->
+<!-- ========================================================= -->
+  <!-- ========================================================= -->
+<!-- PART 3A -->
+<!-- IMPLEMENTATION -->
+<!-- IMPLEMENTATION ROADMAP -->
+<!-- ========================================================= -->
+
+<!-- ========================================================= -->
+<!-- IMPLEMENTATION GUIDE -->
+<!-- ========================================================= -->
+
+<section id="implementation">
+
+    <div class="container">
+
+        <div class="section-tag">
+
+            🚀
+
+            Implementation Guide
+
+        </div>
+
+        <h2 class="section-title">
+
+            Implementing Authentication Journey Engine
+
+        </h2>
+
+        <p class="section-description">
+
+            Successfully implementing Authentication Journey Engine (AJE)
+            requires more than integrating authentication methods. The
+            platform must continuously collect contextual information,
+            evaluate trust, calculate risk, enforce authentication
+            policies, orchestrate verification methods, and monitor
+            authenticated sessions.
+
+            A phased implementation approach allows organizations to
+            deploy AJE incrementally while minimizing operational risk,
+            validating authentication policies, and improving user
+            experience throughout the rollout.
+
+        </p>
+
+        <br><br>
+
+        <div class="grid-2">
+
+            <div class="card">
+
+                <h3>
+
+                    Before Implementation
+
+                </h3>
+
+                <br>
+
+                <ul>
+
+                    <li>✔ Inventory existing authentication methods</li>
+
+                    <li>✔ Identify identity providers</li>
+
+                    <li>✔ Define authentication policies</li>
+
+                    <li>✔ Classify business applications</li>
+
+                    <li>✔ Define trust signals</li>
+
+                    <li>✔ Configure risk evaluation rules</li>
+
+                    <li>✔ Select supported authentication factors</li>
+
+                    <li>✔ Define audit and compliance requirements</li>
+
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Deployment Goals
+
+                </h3>
+
+                <br>
+
+                <ul>
+
+                    <li>✔ Centralize authentication orchestration</li>
+
+                    <li>✔ Improve login experience</li>
+
+                    <li>✔ Reduce unnecessary MFA requests</li>
+
+                    <li>✔ Enable adaptive authentication</li>
+
+                    <li>✔ Support Zero Trust security</li>
+
+                    <li>✔ Improve regulatory compliance</li>
+
+                    <li>✔ Increase authentication visibility</li>
+
+                    <li>✔ Scale across enterprise applications</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- IMPLEMENTATION ROADMAP -->
+<!-- ========================================================= -->
+
+<section id="roadmap">
+
+    <div class="container">
+
+        <div class="section-tag">
+
+            🗺
+
+            Implementation Roadmap
+
+        </div>
+
+        <h2 class="section-title">
+
+            Recommended Enterprise Rollout
+
+        </h2>
+
+        <p class="section-description">
+
+            Large organizations should deploy Authentication Journey
+            Engine in multiple phases. Beginning with centralized
+            authentication services and gradually enabling intelligent
+            journey generation allows authentication policies and trust
+            models to mature before enterprise-wide adoption.
+
+        </p>
+
+        <br><br>
+
+        <div class="grid-3">
+
+            <div class="card">
+
+                <h3>
+
+                    Phase 1
+
+                </h3>
+
+                <br>
+
+                <strong>
+
+                    Authentication Foundation
+
+                </strong>
+
+                <br><br>
+
+                <ul>
+
+                    <li>✔ Integrate Identity Provider</li>
+
+                    <li>✔ Enable SSO</li>
+
+                    <li>✔ Configure MFA</li>
+
+                    <li>✔ Centralize authentication APIs</li>
+
+                    <li>✔ Enable audit logging</li>
+
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Phase 2
+
+                </h3>
+
+                <br>
+
+                <strong>
+
+                    Context Collection
+
+                </strong>
+
+                <br><br>
+
+                <ul>
+
+                    <li>✔ Device Intelligence</li>
+
+                    <li>✔ Browser Fingerprinting</li>
+
+                    <li>✔ Behavioral Analytics</li>
+
+                    <li>✔ Geo-location Analysis</li>
+
+                    <li>✔ Session Intelligence</li>
+
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Phase 3
+
+                </h3>
+
+                <br>
+
+                <strong>
+
+                    Trust Engine
+
+                </strong>
+
+                <br><br>
+
+                <ul>
+
+                    <li>✔ Trust Score Model</li>
+
+                    <li>✔ Identity Confidence</li>
+
+                    <li>✔ Device Reputation</li>
+
+                    <li>✔ Historical Analysis</li>
+
+                    <li>✔ Reputation Tracking</li>
+
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Phase 4
+
+                </h3>
+
+                <br>
+
+                <strong>
+
+                    Risk Intelligence
+
+                </strong>
+
+                <br><br>
+
+                <ul>
+
+                    <li>✔ Fraud Detection</li>
+
+                    <li>✔ Impossible Travel</li>
+
+                    <li>✔ Threat Intelligence</li>
+
+                    <li>✔ Behavioral Anomalies</li>
+
+                    <li>✔ Dynamic Risk Scoring</li>
+
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Phase 5
+
+                </h3>
+
+                <br>
+
+                <strong>
+
+                    Journey Generation
+
+                </strong>
+
+                <br><br>
+
+                <ul>
+
+                    <li>✔ Dynamic Authentication</li>
+
+                    <li>✔ Journey Templates</li>
+
+                    <li>✔ Policy Decisions</li>
+
+                    <li>✔ Authentication Routing</li>
+
+                    <li>✔ Challenge Selection</li>
+
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Phase 6
+
+                </h3>
+
+                <br>
+
+                <strong>
+
+                    Continuous Authentication
+
+                </strong>
+
+                <br><br>
+
+                <ul>
+
+                    <li>✔ Session Monitoring</li>
+
+                    <li>✔ Trust Recalculation</li>
+
+                    <li>✔ Risk Reassessment</li>
+
+                    <li>✔ Step-up Authentication</li>
+
+                    <li>✔ Automated Response</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- ENTERPRISE BEST PRACTICES -->
+<!-- ========================================================= -->
+
+<section id="best-practices">
+
+    <div class="container">
+
+        <div class="section-tag">
+
+            ⭐
+
+            Best Practices
+
+        </div>
+
+        <h2 class="section-title">
+
+            Enterprise Deployment Recommendations
+
+        </h2>
+
+        <p class="section-description">
+
+            Authentication Journey Engine performs best when authentication
+            decisions are driven by contextual intelligence instead of
+            fixed rules. Organizations should continuously review trust
+            models, authentication policies, and risk calculations to
+            maintain an effective balance between security and usability.
+
+        </p>
+
+        <br><br>
+
+        <div class="grid-2">
+
+            <div class="card">
+
+                <h3>
+
+                    Recommended Practices
+
+                </h3>
+
+                <br>
+
+                <ul>
+
+                    <li>✔ Prefer passkeys over passwords</li>
+
+                    <li>✔ Keep authentication policies centralized</li>
+
+                    <li>✔ Continuously monitor active sessions</li>
+
+                    <li>✔ Recalculate trust frequently</li>
+
+                    <li>✔ Enable adaptive MFA only when required</li>
+
+                    <li>✔ Audit every authentication journey</li>
+
+                    <li>✔ Version authentication policies</li>
+
+                    <li>✔ Monitor authentication performance</li>
+
+                    <li>✔ Test journey rules regularly</li>
+
+                    <li>✔ Review risk models periodically</li>
+
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Common Mistakes
+
+                </h3>
+
+                <br>
+
+                <ul>
+
+                    <li>❌ Treating every login equally</li>
+
+                    <li>❌ Hardcoding authentication flows</li>
+
+                    <li>❌ Ignoring trusted device history</li>
+
+                    <li>❌ Using static MFA rules</li>
+
+                    <li>❌ Missing audit records</li>
+
+                    <li>❌ Not monitoring sessions</li>
+
+                    <li>❌ Poor policy governance</li>
+
+                    <li>❌ Ignoring behavioral analytics</li>
+
+                    <li>❌ Delayed trust updates</li>
+
+                    <li>❌ Weak observability</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- CONTINUES IN PART 3B -->
+<!-- SECURITY -->
+<!-- COMPLIANCE -->
+<!-- ========================================================= -->
+  <!-- ========================================================= -->
+<!-- PART 3B -->
+<!-- SECURITY -->
+<!-- COMPLIANCE -->
+<!-- ========================================================= -->
+
+<!-- ========================================================= -->
+<!-- SECURITY ARCHITECTURE -->
+<!-- ========================================================= -->
+
+<section id="security">
+
+    <div class="container">
+
+        <div class="section-tag">
+
+            🔒
+
+            Security Architecture
+
+        </div>
+
+        <h2 class="section-title">
+
+            Security Principles of Authentication Journey Engine
+
+        </h2>
+
+        <p class="section-description">
+
+            Authentication Journey Engine (AJE) is built on Zero Trust
+            principles where every authentication request is treated as
+            potentially untrusted until sufficient evidence proves
+            otherwise. Rather than relying on static authentication
+            methods, AJE continuously evaluates trust, risk, device
+            reputation, user behavior, environmental context, and
+            enterprise security policies before, during, and after
+            authentication.
+
+            Security is therefore an ongoing process instead of a
+            one-time login event, allowing organizations to detect
+            compromised sessions, fraudulent activities, and privilege
+            abuse in real time.
+
+        </p>
+
+        <br><br>
+
+        <div class="grid-2">
+
+            <div class="card">
+
+                <h3>
+
+                    Security Objectives
+
+                </h3>
+
+                <br>
+
+                <ul>
+
+                    <li>✔ Verify every authentication request</li>
+
+                    <li>✔ Never automatically trust users or devices</li>
+
+                    <li>✔ Continuously validate active sessions</li>
+
+                    <li>✔ Reduce account takeover attacks</li>
+
+                    <li>✔ Detect abnormal authentication behavior</li>
+
+                    <li>✔ Protect privileged resources</li>
+
+                    <li>✔ Enforce centralized security policies</li>
+
+                    <li>✔ Maintain complete authentication audit trails</li>
+
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Security Controls
+
+                </h3>
+
+                <br>
+
+                <ul>
+
+                    <li>✔ Adaptive Multi-Factor Authentication</li>
+
+                    <li>✔ Device Trust Validation</li>
+
+                    <li>✔ Passkey Authentication</li>
+
+                    <li>✔ Biometric Verification</li>
+
+                    <li>✔ Behavioral Analytics</li>
+
+                    <li>✔ Threat Intelligence Integration</li>
+
+                    <li>✔ Continuous Session Monitoring</li>
+
+                    <li>✔ Automated Step-Up Authentication</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <div class="card">
+
+<pre style="font-family:inherit;line-height:2;color:#555;white-space:pre-wrap;">
+
+Authentication Request
+
+↓
+
+Identity Validation
+
+↓
+
+Trust Evaluation
+
+↓
+
+Risk Analysis
+
+↓
+
+Policy Enforcement
+
+↓
+
+Generate Authentication Journey
+
+↓
+
+Authentication Successful
+
+↓
+
+Continuous Monitoring
+
+↓
+
+Risk Increased?
+
+↓
+
+Additional Authentication Required
+
+</pre>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- THREAT MITIGATION -->
+<!-- ========================================================= -->
+
+<section id="threats">
+
+    <div class="container">
+
+        <div class="section-tag">
+
+            🛡
+
+            Threat Protection
+
+        </div>
+
+        <h2 class="section-title">
+
+            Security Threats Mitigated by AJE
+
+        </h2>
+
+        <p class="section-description">
+
+            Authentication Journey Engine protects enterprise applications
+            against modern identity attacks by dynamically increasing
+            authentication strength whenever suspicious behavior is
+            detected. Instead of relying solely on passwords or static
+            MFA policies, AJE evaluates multiple trust signals before
+            granting or maintaining access.
+
+        </p>
+
+        <br><br>
+
+        <div class="card">
+
+            <div class="table-responsive">
+
+                <table style="width:100%;border-collapse:collapse;">
+
+                    <thead>
+
+                        <tr>
+
+                            <th style="padding:18px;text-align:left;border-bottom:1px solid #e8e8e8;">
+
+                                Threat
+
+                            </th>
+
+                            <th style="padding:18px;text-align:left;border-bottom:1px solid #e8e8e8;">
+
+                                Detection
+
+                            </th>
+
+                            <th style="padding:18px;text-align:left;border-bottom:1px solid #e8e8e8;">
+
+                                Automatic Response
+
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td style="padding:18px;">
+
+                                Account Takeover
+
+                            </td>
+
+                            <td style="padding:18px;">
+
+                                Identity anomalies
+
+                            </td>
+
+                            <td style="padding:18px;">
+
+                                Step-up authentication
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td style="padding:18px;">
+
+                                Credential Stuffing
+
+                            </td>
+
+                            <td style="padding:18px;">
+
+                                Failed login patterns
+
+                            </td>
+
+                            <td style="padding:18px;">
+
+                                Risk escalation
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td style="padding:18px;">
+
+                                Impossible Travel
+
+                            </td>
+
+                            <td style="padding:18px;">
+
+                                Geo-location analysis
+
+                            </td>
+
+                            <td style="padding:18px;">
+
+                                Require MFA
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td style="padding:18px;">
+
+                                Device Spoofing
+
+                            </td>
+
+                            <td style="padding:18px;">
+
+                                Device intelligence
+
+                            </td>
+
+                            <td style="padding:18px;">
+
+                                Reject trusted status
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td style="padding:18px;">
+
+                                Session Hijacking
+
+                            </td>
+
+                            <td style="padding:18px;">
+
+                                Session monitoring
+
+                            </td>
+
+                            <td style="padding:18px;">
+
+                                Re-authenticate user
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td style="padding:18px;">
+
+                                Insider Threat
+
+                            </td>
+
+                            <td style="padding:18px;">
+
+                                Behavioral analysis
+
+                            </td>
+
+                            <td style="padding:18px;">
+
+                                Restrict privileged actions
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- COMPLIANCE -->
+<!-- ========================================================= -->
+
+<section id="compliance">
+
+    <div class="container">
+
+        <div class="section-tag">
+
+            📜
+
+            Compliance
+
+        </div>
+
+        <h2 class="section-title">
+
+            Regulatory Compliance Support
+
+        </h2>
+
+        <p class="section-description">
+
+            Authentication Journey Engine helps organizations satisfy
+            security, privacy, and regulatory requirements by providing
+            centralized authentication policies, complete audit trails,
+            immutable authentication history, adaptive authentication,
+            and strong identity verification across enterprise systems.
+
+        </p>
+
+        <br><br>
+
+        <div class="grid-3">
+
+            <div class="card">
+
+                <h3>
+
+                    GDPR
+
+                </h3>
+
+                <br>
+
+                <ul>
+
+                    <li>✔ Identity protection</li>
+
+                    <li>✔ Audit logging</li>
+
+                    <li>✔ Privacy controls</li>
+
+                    <li>✔ Secure authentication</li>
+
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    ISO 27001
+
+                </h3>
+
+                <br>
+
+                <ul>
+
+                    <li>✔ Access control</li>
+
+                    <li>✔ Identity management</li>
+
+                    <li>✔ Security monitoring</li>
+
+                    <li>✔ Audit evidence</li>
+
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    NIST Zero Trust
+
+                </h3>
+
+                <br>
+
+                <ul>
+
+                    <li>✔ Verify explicitly</li>
+
+                    <li>✔ Least privilege</li>
+
+                    <li>✔ Continuous validation</li>
+
+                    <li>✔ Assume breach</li>
+
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    PCI DSS
+
+                </h3>
+
+                <br>
+
+                <ul>
+
+                    <li>✔ Strong authentication</li>
+
+                    <li>✔ MFA support</li>
+
+                    <li>✔ Audit logging</li>
+
+                    <li>✔ Access protection</li>
+
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    HIPAA
+
+                </h3>
+
+                <br>
+
+                <ul>
+
+                    <li>✔ Identity assurance</li>
+
+                    <li>✔ Secure access</li>
+
+                    <li>✔ Activity monitoring</li>
+
+                    <li>✔ Compliance records</li>
+
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    SOC 2
+
+                </h3>
+
+                <br>
+
+                <ul>
+
+                    <li>✔ Authentication controls</li>
+
+                    <li>✔ Monitoring</li>
+
+                    <li>✔ Auditability</li>
+
+                    <li>✔ Security governance</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <div class="card">
+
+            <h3>
+
+                Compliance Best Practices
+
+            </h3>
+
+            <br>
+
+            <ul>
+
+                <li>✔ Maintain immutable authentication logs</li>
+
+                <li>✔ Version authentication policies</li>
+
+                <li>✔ Encrypt authentication evidence</li>
+
+                <li>✔ Review trust models regularly</li>
+
+                <li>✔ Monitor privileged sessions continuously</li>
+
+                <li>✔ Perform periodic access reviews</li>
+
+                <li>✔ Retain audit records according to policy</li>
+
+                <li>✔ Validate authentication journeys before deployment</li>
+
+                <li>✔ Continuously update threat intelligence</li>
+
+                <li>✔ Regularly test incident response procedures</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- CONTINUES IN PART 3C -->
+<!-- COMPARISON -->
+<!-- FAQ -->
+<!-- COMMUNITY -->
+<!-- FOOTER -->
+<!-- ========================================================= -->
+  <!-- ========================================================= -->
+<!-- PART 3C -->
+<!-- COMPARISON -->
+<!-- FUTURE ENHANCEMENTS -->
+<!-- FAQ -->
+<!-- COMMUNITY -->
+<!-- FOOTER -->
+<!-- ========================================================= -->
+
+<!-- ========================================================= -->
+<!-- COMPARISON -->
+<!-- ========================================================= -->
+
+<section id="comparison">
+
+    <div class="container">
+
+        <div class="section-tag">
+
+            ⚖️
+
+            Feature Comparison
+
+        </div>
+
+        <h2 class="section-title">
+
+            Authentication Journey Engine vs Traditional Authentication
+
+        </h2>
+
+        <p class="section-description">
+
+            Traditional authentication systems execute fixed login workflows for
+            every user regardless of context. Authentication Journey Engine
+            dynamically generates authentication journeys based on trust,
+            business policies, risk intelligence, user behavior, device
+            reputation, and environmental context.
+
+        </p>
+
+        <br><br>
+
+        <div class="card">
+
+            <div class="table-responsive">
+
+                <table style="width:100%;border-collapse:collapse;">
+
+                    <thead>
+
+                        <tr>
+
+                            <th style="padding:18px;text-align:left;border-bottom:1px solid #e8e8e8;">
+
+                                Capability
+
+                            </th>
+
+                            <th style="padding:18px;text-align:left;border-bottom:1px solid #e8e8e8;">
+
+                                Traditional Authentication
+
+                            </th>
+
+                            <th style="padding:18px;text-align:left;border-bottom:1px solid #e8e8e8;">
+
+                                Authentication Journey Engine
+
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td style="padding:18px;">Authentication Flow</td>
+
+                            <td style="padding:18px;">Fixed</td>
+
+                            <td style="padding:18px;">Dynamic</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td style="padding:18px;">Risk Awareness</td>
+
+                            <td style="padding:18px;">Limited</td>
+
+                            <td style="padding:18px;">Real-Time</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td style="padding:18px;">Device Trust</td>
+
+                            <td style="padding:18px;">Basic</td>
+
+                            <td style="padding:18px;">Continuous</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td style="padding:18px;">Behavior Analysis</td>
+
+                            <td style="padding:18px;">No</td>
+
+                            <td style="padding:18px;">Integrated</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td style="padding:18px;">Adaptive MFA</td>
+
+                            <td style="padding:18px;">Partial</td>
+
+                            <td style="padding:18px;">Fully Dynamic</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td style="padding:18px;">Policy Management</td>
+
+                            <td style="padding:18px;">Distributed</td>
+
+                            <td style="padding:18px;">Centralized</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td style="padding:18px;">Session Protection</td>
+
+                            <td style="padding:18px;">Login Only</td>
+
+                            <td style="padding:18px;">Continuous</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td style="padding:18px;">Zero Trust Ready</td>
+
+                            <td style="padding:18px;">Partial</td>
+
+                            <td style="padding:18px;">Native</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- FUTURE ENHANCEMENTS -->
+<!-- ========================================================= -->
+
+<section id="future">
+
+    <div class="container">
+
+        <div class="section-tag">
+
+            🚀
+
+            Future Enhancements
+
+        </div>
+
+        <h2 class="section-title">
+
+            Future Evolution of Authentication Journey Engine
+
+        </h2>
+
+        <p class="section-description">
+
+            Authentication Journey Engine provides a flexible foundation that
+            can continuously evolve as authentication technologies mature.
+            Future versions may incorporate AI-driven authentication decisions,
+            decentralized identity standards, passwordless authentication,
+            and autonomous security orchestration without requiring changes to
+            integrated applications.
+
+        </p>
+
+        <br><br>
+
+        <div class="grid-3">
+
+            <div class="card">
+
+                <h3>
+
+                    🤖 AI Journey Generation
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Machine learning automatically builds authentication
+                    journeys using historical authentication outcomes,
+                    threat intelligence, and user behavior.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    🌐 Decentralized Identity
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Support for decentralized identities, verifiable
+                    credentials, and digital identity wallets.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    🔑 Passwordless Enterprise
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Passkeys and hardware-backed authentication become
+                    primary authentication methods.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    📈 Predictive Risk Models
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Predict authentication fraud before attacks occur
+                    using behavioral prediction and AI.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    🔄 Autonomous Policies
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Authentication policies automatically optimize
+                    themselves using security analytics.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    ☁ Cloud-Native Scaling
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Distributed journey generation supporting millions
+                    of authentication requests per second.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- FAQ -->
+<!-- ========================================================= -->
+
+<section id="faq">
+
+    <div class="container">
+
+        <div class="section-tag">
+
+            ❓
+
+            Frequently Asked Questions
+
+        </div>
+
+        <h2 class="section-title">
+
+            Authentication Journey Engine FAQ
+
+        </h2>
+
+        <br><br>
+
+        <div class="grid-2">
+
+            <div class="card">
+
+                <h3>
+
+                    Is Authentication Journey Engine an MFA solution?
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    No. MFA is only one capability. Authentication Journey
+                    Engine decides if, when, and which authentication methods
+                    should be executed.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Does every user follow the same login process?
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    No. Every authentication request receives its own
+                    dynamically generated authentication journey.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Can it work with existing identity providers?
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Yes. It integrates with existing identity providers,
+                    authentication services, and enterprise IAM platforms.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Is it suitable for Zero Trust?
+
+                </h3>
+
+                <br>
+
+                <p>
+
+                    Yes. Continuous trust evaluation and adaptive
+                    authentication align naturally with Zero Trust
+                    architecture.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- COMMUNITY -->
+<!-- ========================================================= -->
+
+<section id="community-section">
+
+    <div class="container">
+
+        <div class="section-tag">
+
+            💬
+
+            Community
+
+        </div>
+
+        <h2 class="section-title">
+
+            Discuss This Feature
+
+        </h2>
+
+        <p class="section-description">
+
+            Share implementation ideas, architecture improvements,
+            production experiences, and authentication best practices with
+            the BuildFeatures community.
+
+        </p>
+
+        <div id="community-root"></div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- RELATED FEATURES -->
+<!-- ========================================================= -->
+
+<section id="related-features">
+
+    <div class="container">
+
+        <div class="section-tag">
+
+            🔗
+
+            Related Features
+
+        </div>
+
+        <h2 class="section-title">
+
+            Explore Similar Features
+
+        </h2>
+
+        <p class="section-description">
+
+            Continue exploring production-ready authentication and security
+            features from the BuildFeatures library.
+
+        </p>
+
+        <div
+            id="related-features-container"
+            class="grid-3">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- FOOTER -->
+<!-- ========================================================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <p>
+
+            © 2026 BuildFeatures. All rights reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- ========================================================= -->
+<!-- COMMUNITY SCRIPT -->
+<!-- ========================================================= -->
+
+<script src="https://buildfeatures.github.io/buildfeatures/components/community.js"></script>
+
+</body>
+
+</html>
