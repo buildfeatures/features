@@ -4,9 +4,7 @@ async function loadBrowseMore() {
 
     if (!container) return;
 
-    const response = await fetch(
-        "https://buildfeatures.github.io/buildfeatures/components/browse-more.html"
-    );
+    const response = await fetch("https://buildfeatures.github.io/features/components/continue-exploring.html");
 
     container.innerHTML = await response.text();
 
