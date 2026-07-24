@@ -1,0 +1,91 @@
+/* ========================================================= */
+/* BACK BUTTON */
+/* ========================================================= */
+
+.bf-back-button{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-right:10px;
+
+    margin-top:4px;
+
+    flex-shrink:0;
+
+}
+
+.bf-back-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:34px;
+
+    height:34px;
+
+    padding:0;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#111827;
+
+    color:#ffffff;
+
+    cursor:pointer;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+
+    transition:all .25s ease;
+
+}
+
+.bf-back-btn:hover{
+
+    background:#2563eb;
+
+    transform:translateY(-1px);
+
+    box-shadow:0 8px 20px rgba(37,99,235,.30);
+
+}
+
+.bf-back-btn i{
+
+    font-size:14px;
+
+}
+
+.bf-back-btn span{
+
+    display:none;
+
+}
+
+@media(max-width:768px){
+
+    .bf-back-button{
+
+        margin-right:8px;
+
+        margin-top:2px;
+
+    }
+
+    .bf-back-btn{
+
+        width:32px;
+
+        height:32px;
+
+    }
+
+}
