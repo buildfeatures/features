@@ -1,0 +1,124 @@
+/* ========================================================= */
+/* BROWSE MORE FEATURES */
+/* ========================================================= */
+
+.browse-more {
+
+    padding: 5rem 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent 0%,
+            rgba(37, 99, 235, .03) 100%
+        );
+
+    text-align: center;
+
+}
+
+.browse-more-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: .85rem;
+
+    padding: 1rem 2.25rem;
+
+    border-radius: 999px;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #1d4ed8
+    );
+
+    color: #ffffff;
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    letter-spacing: .02em;
+
+    box-shadow:
+        0 12px 30px rgba(37, 99, 235, .25);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+
+}
+
+.browse-more-button i {
+
+    transition:
+        transform .3s ease;
+
+}
+
+.browse-more-button:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 20px 40px rgba(37, 99, 235, .35);
+
+    background: linear-gradient(
+        135deg,
+        #1d4ed8,
+        #1e40af
+    );
+
+}
+
+.browse-more-button:hover i {
+
+    transform: translateX(6px);
+
+}
+
+.browse-more-button:active {
+
+    transform: translateY(-1px);
+
+}
+
+.browse-more-button:focus-visible {
+
+    outline: 3px solid rgba(37,99,235,.25);
+
+    outline-offset: 4px;
+
+}
+
+/* ========================================================= */
+/* MOBILE */
+/* ========================================================= */
+
+@media (max-width:768px){
+
+    .browse-more{
+
+        padding:4rem 0;
+
+    }
+
+    .browse-more-button{
+
+        width:100%;
+
+        max-width:340px;
+
+        padding:1rem 1.5rem;
+
+    }
+
+}
